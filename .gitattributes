@@ -1,0 +1,39 @@
+* text=auto
+
+*.cs text diff=csharp
+*.shader text
+*.cginc text
+*.hlsl text
+*.uss text
+*.uxml text
+*.json text
+*.md text
+
+*.unity merge=binary
+*.prefab merge=binary
+*.asset merge=binary
+*.mat merge=binary
+*.anim merge=binary
+*.controller merge=binary
+*.physicMaterial merge=binary
+*.physicsMaterial2D merge=binary
+*.meta merge=binary
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.psd binary
+*.tga binary
+*.exr binary
+*.hdr binary
+*.fbx binary
+*.obj binary
+*.blend binary
+*.ttf binary
+*.otf binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.dll binary
+*.so binary
+*.aar binary

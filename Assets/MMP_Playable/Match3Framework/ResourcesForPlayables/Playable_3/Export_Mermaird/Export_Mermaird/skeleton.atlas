@@ -1,0 +1,55 @@
+
+skeleton.png
+size: 888,1032
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+7
+  rotate: true
+  xy: 814, 485
+  size: 49, 50
+  orig: 1024, 1536
+  offset: 381, 1224
+  index: -1
+Mermaid
+  rotate: true
+  xy: 2, 2
+  size: 588, 639
+  orig: 1024, 1536
+  offset: 195, 761
+  index: -1
+Mermaid2
+  rotate: true
+  xy: 2, 592
+  size: 438, 884
+  orig: 1024, 1536
+  offset: 229, 84
+  index: -1
+Mermaid3
+  rotate: false
+  xy: 643, 288
+  size: 169, 302
+  orig: 1024, 1536
+  offset: 560, 1048
+  index: -1
+Mermaid4
+  rotate: false
+  xy: 643, 8
+  size: 156, 117
+  orig: 1024, 1536
+  offset: 451, 874
+  index: -1
+Mermaid5
+  rotate: true
+  xy: 643, 127
+  size: 159, 183
+  orig: 1024, 1536
+  offset: 225, 910
+  index: -1
+Mermaid6
+  rotate: false
+  xy: 814, 536
+  size: 57, 54
+  orig: 1024, 1536
+  offset: 468, 1236
+  index: -1
