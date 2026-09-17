@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DinoUi
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 0
+      maxTextureSize: 0
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: -911826509, guid: 4460c92af9c556b468ed19d3b2d685c1, type: 3}
+    - {fileID: -948745689, guid: 4460c92af9c556b468ed19d3b2d685c1, type: 3}
+    - {fileID: 1937252505, guid: 4460c92af9c556b468ed19d3b2d685c1, type: 3}
+    - {fileID: 13220941, guid: 4460c92af9c556b468ed19d3b2d685c1, type: 3}
+    - {fileID: -501526695, guid: 8fd49a695ed13b245b278d4f486c142a, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 8fd49a695ed13b245b278d4f486c142a: -501526695
+    - 4460c92af9c556b468ed19d3b2d685c1: 1937252505
+    - 4460c92af9c556b468ed19d3b2d685c1: -948745689
+    - 4460c92af9c556b468ed19d3b2d685c1: 13220941
+    - 4460c92af9c556b468ed19d3b2d685c1: -911826509
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -501526695, guid: 8fd49a695ed13b245b278d4f486c142a, type: 3}
+  - {fileID: 1937252505, guid: 4460c92af9c556b468ed19d3b2d685c1, type: 3}
+  - {fileID: -948745689, guid: 4460c92af9c556b468ed19d3b2d685c1, type: 3}
+  - {fileID: 13220941, guid: 4460c92af9c556b468ed19d3b2d685c1, type: 3}
+  - {fileID: -911826509, guid: 4460c92af9c556b468ed19d3b2d685c1, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Special_13
+  - HighLight
+  - PlayNowBtn
+  - TipFinger
+  - Logo
+  m_RenderDataMap: {}
+  m_Tag: DinoUi
+  m_IsVariant: 0
