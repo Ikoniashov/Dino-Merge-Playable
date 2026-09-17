@@ -1,0 +1,80 @@
+{
+  "ignores": [
+    "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/UIExtentions.cs",
+    "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs",
+    "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs",
+    "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs",
+    "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs",
+    "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
+    "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+  ],
+  "groups": [
+    [
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/AudioSystem.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/DinoSelection/DinoCarousel.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/DinoSelection/DinoSelectionManager.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/DragManager.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/CameraController.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/FlyingDragManager.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/HighlightedZone.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/FlyingObjectsManager.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/PointsManager.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/MainSystem.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/EggBasket.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/DragObject.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/GridCell.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/DecorationObject.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/ObjectManager.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/TutorialHand.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/FlyableMergeObject.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/MapObjectLayoutManager.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/Fog.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/FogManager.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/MapFogLayoutManager.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/ObjectSet.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/CustomGridShape.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/PlayableCta.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/PlayNowButton.cs",
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/DinoSelection/TutorialHandPointer.cs"
+    ],
+    [
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/MMP_Playable/Match3Framework/Scripts/UIExtentions.cs"
+    ],
+    [
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
+    ],
+    [
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
+    [
+      "C:/Projects/WorkUnity/Dino Merge/LunaTemp/stage3/processed-scripts/Assets/TutorialInfo/Scripts/Readme.cs"
+    ],
+    [
+      "C:/Projects/Playworks/Dino Merge Playworks 7.2.0/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "C:/Projects/Playworks/Dino Merge Playworks 7.2.0/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "C:/Projects/Playworks/Dino Merge Playworks 7.2.0/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}
