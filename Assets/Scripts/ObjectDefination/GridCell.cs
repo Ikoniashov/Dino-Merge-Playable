@@ -178,6 +178,10 @@ public class GridCell : MonoBehaviour
             {
 
                 this.m_wall = GameMgr.GenerateFromPrefabPrincess("CellSide_BrownRock");
+                if (this.m_wall == null)
+                {
+                    return false;
+                }
                 Vector3 originalScale = this.m_wall.transform.localScale;
                 this.m_wall.transform.parent = this.VerticalFaceLocator.transform;
                 if (originalScale == Vector3.one) this.m_wall.transform.localScale = Vector3.one;
@@ -227,6 +231,10 @@ public class GridCell : MonoBehaviour
             else if (this.m_tufts[i] == null)
             {
                 this.m_tufts[i] = GameMgr.GenerateFromGameObjectPrincess(this.TuftPrefabs[i]);
+                if (this.m_tufts[i] == null)
+                {
+                    continue;
+                }
                 Vector3 originalScale = this.m_tufts[i].transform.localScale;
                 this.m_tufts[i].transform.parent = this.TuftLocators[i].transform;
                 if (originalScale == Vector3.one) this.m_tufts[i].transform.localScale = Vector3.one;
