@@ -13,7 +13,6 @@ public class DragManager : MonoBehaviour
     [SerializeField] private PointsManager m_pointsManager;
     [SerializeField] private ParticleSystem m_mergeEffectParticleSystem;
     [SerializeField] private ObjectManager m_objectManager;
-    [SerializeField] private TutorialHand m_tutorialHand;
     [SerializeField] private FlyingObjectsManager m_flyingObjectsManager;
     [SerializeField] private FogManager m_fogManager;
     [SerializeField] private GameObject m_mergeText;
@@ -113,7 +112,7 @@ public class DragManager : MonoBehaviour
 
     private void TryStartDrag(Vector3 a_touchPosition)
     {
-        TutorialHand.Instance.StopCoroutine();
+        TutorialHand.Instance.NotifyPlayerInput();
 
         if (m_isDragging) return;
 
@@ -131,6 +130,7 @@ public class DragManager : MonoBehaviour
                 dragObject.e_onObjectSelected?.Invoke(dragObject);
                 dragObject.PlaySelectAnimation();
                 dragObject.OnSelectObject();
+                TutorialHand.Instance.NotifyObjectGrabbed(dragObject);
             }
             else if (dragObject != null && !dragObject.isAllowedToDrag)
             {
@@ -289,11 +289,6 @@ public class DragManager : MonoBehaviour
 
     private void EndDrag()
     {
-        if (m_objectManager.spawnedObjects.Count >= 2)
-        {
-            TutorialHand.Instance.ActivateTutorialAfterPlayerInactivity();
-        }
-
         if (!m_isDragging || m_currentDraggedObject == null) return;
 
         StopPullingCurrentGroup();
@@ -323,6 +318,8 @@ public class DragManager : MonoBehaviour
         m_currentDraggedObject = null;
         m_isDragging = false;
         m_lastHoveredCell = null;
+        TutorialHand.Instance.ScheduleHint();
+
         Debug.Log("Drag ended");
     }
 
@@ -520,7 +517,6 @@ public class DragManager : MonoBehaviour
 
         if (a_subset[0].objectType == "key")
         {
-            m_tutorialHand.StopTutorialHandAnimation();
             m_mergeText.SetActive(true);
         }
 
@@ -549,7 +545,7 @@ public class DragManager : MonoBehaviour
 
         if (m_objectManager.spawnedObjects.Count >= 2)
         {
-            TutorialHand.Instance.ActivateTutorialAfterPlayerInactivity();
+            TutorialHand.Instance.ScheduleHint();
         }
 
         if (flyableMergeNew != null && chestPosition != Vector3.zero)

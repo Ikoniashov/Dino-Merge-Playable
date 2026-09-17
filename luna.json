@@ -6539,10 +6539,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.UI.SetPropertyUtility",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.UI.BaseMeshEffect",
                 "excluded": true
             },
@@ -8609,6 +8605,10 @@
             {
                 "name": "DG.Tweening.Plugins.Core.ITPlugin$4",
                 "excluded": false
+            },
+            {
+                "name": "TutorialHand.TutorialState",
+                "excluded": false
             }
         ],
         "unusedMethods": [
@@ -9038,7 +9038,7 @@
                     },
                     {
                         "name": "toString",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "parse",
@@ -17830,7 +17830,7 @@
                     },
                     {
                         "name": "WorldToViewportPoint",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ScreenToViewportPoint",
@@ -18756,7 +18756,7 @@
                     },
                     {
                         "name": "disabledColor#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "disabledColor#set",
@@ -18968,7 +18968,7 @@
                     },
                     {
                         "name": "disabledSprite#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "disabledSprite#set",
@@ -19076,7 +19076,7 @@
                     },
                     {
                         "name": "raycastTarget#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "color#get",
@@ -26030,7 +26030,7 @@
                     },
                     {
                         "name": "disabledTrigger#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "disabledTrigger#set",
@@ -30384,7 +30384,7 @@
                     },
                     {
                         "name": "ChangeToLeft",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AnimateTransition",
@@ -30447,6 +30447,14 @@
                     {
                         "name": "ShowPreviousDino",
                         "excluded": false
+                    },
+                    {
+                        "name": "SetRewardCardButtonActive",
+                        "excluded": false
+                    },
+                    {
+                        "name": "FinishPlayable",
+                        "excluded": false
                     }
                 ]
             },
@@ -30460,7 +30468,7 @@
                     },
                     {
                         "name": "Distinct",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "IsDragging#get",
@@ -30520,7 +30528,7 @@
                     },
                     {
                         "name": "GetMergeSubset",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "TryMoveToCell",
@@ -30536,7 +30544,7 @@
                     },
                     {
                         "name": "CheckForMerge",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "MergeGroup",
@@ -31529,14 +31537,6 @@
                 "staticMethods": [],
                 "instanceMethods": [
                     {
-                        "name": "tutorialCoroutine#get",
-                        "excluded": false
-                    },
-                    {
-                        "name": "tutorialCoroutine#set",
-                        "excluded": true
-                    },
-                    {
                         "name": "init",
                         "excluded": false
                     },
@@ -31549,63 +31549,115 @@
                         "excluded": true
                     },
                     {
-                        "name": "StopCoroutine$3",
-                        "excluded": false
-                    },
-                    {
-                        "name": "SetStartColor",
-                        "excluded": false
-                    },
-                    {
-                        "name": "ShowTapTutorialStep",
-                        "excluded": false
-                    },
-                    {
-                        "name": "ShowMovingTutorialStep",
-                        "excluded": false
-                    },
-                    {
-                        "name": "StartTutoriaMovingAnimation",
-                        "excluded": false
-                    },
-                    {
-                        "name": "StartTutorialPointAnimation",
-                        "excluded": false
-                    },
-                    {
                         "name": "StopTutorialHandAnimation",
                         "excluded": false
                     },
                     {
-                        "name": "ActivateTutorialAfterPlayerInactivity",
+                        "name": "IsSameObject",
                         "excluded": false
                     },
                     {
-                        "name": "TutorialAfterInactivity",
+                        "name": "Contains",
                         "excluded": false
                     },
                     {
-                        "name": "OnPlayerAction",
+                        "name": "Start",
                         "excluded": false
                     },
                     {
-                        "name": "OnObjectSelected",
+                        "name": "BeginTutorial",
                         "excluded": false
                     },
                     {
-                        "name": "OnObjectSelectedToMerge",
-                        "excluded": true
-                    },
-                    {
-                        "name": "OnObjectMoved",
+                        "name": "NotifyBasketOpened",
                         "excluded": false
                     },
                     {
-                        "name": "StartTutorialTapHandAnimation",
+                        "name": "NotifyPlayerInput",
                         "excluded": false
                     },
                     {
-                        "name": "StartTutorialMoveHandAnimation",
+                        "name": "NotifyObjectGrabbed",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ScheduleHint",
+                        "excluded": false
+                    },
+                    {
+                        "name": "WaitForInactivity",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ShowNextStep",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetNextHintDelay",
+                        "excluded": false
+                    },
+                    {
+                        "name": "TryFindHint",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CollectMergeables",
+                        "excluded": false
+                    },
+                    {
+                        "name": "BuildCluster",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IsNeighborOfCluster",
+                        "excluded": false
+                    },
+                    {
+                        "name": "FindFreeNeighborCell",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetNearest",
+                        "excluded": false
+                    },
+                    {
+                        "name": "FindEggBasket",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IsUsableObject",
+                        "excluded": false
+                    },
+                    {
+                        "name": "IsOnScreen",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PlayTapAnimation",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PlayDragAnimation",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PlayHoldAnimation",
+                        "excluded": false
+                    },
+                    {
+                        "name": "HideHand",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetHandAlpha",
+                        "excluded": false
+                    },
+                    {
+                        "name": "KillSequence",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StopWaiting",
                         "excluded": false
                     }
                 ]
@@ -34417,6 +34469,24 @@
                     {
                         "name": "ctor",
                         "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.SetPropertyUtility",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "SetColor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetStruct",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetClass",
+                        "excluded": true
                     }
                 ]
             }

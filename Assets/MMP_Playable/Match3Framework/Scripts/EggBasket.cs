@@ -32,7 +32,7 @@ public class EggBasket : MonoBehaviour
     public void ActivateBasket()
     {
         AudioSystem.Instance.PlayOpenEggBasketSound();
-        TutorialHand.Instance.StopTutorialHandAnimation();
+        TutorialHand.Instance.NotifyBasketOpened();
 
         foreach (var pos in m_spawnPositions)
         {

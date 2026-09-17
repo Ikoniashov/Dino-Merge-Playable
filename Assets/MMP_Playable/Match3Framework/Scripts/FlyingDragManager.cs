@@ -332,9 +332,6 @@ public class FlyingDragManager : MonoBehaviour
         m_currentDraggedObject.DestroyWithAnimation();
         m_currentDraggedObject = null;
 
-        /*if (a_subset[0].objectType == "key")
-            m_tutorialHand.StopTutorialHandAnimation();*/
-
         yield return new WaitForSeconds(0.4f);
 
         AudioSystem.Instance.PlayMergeSound();

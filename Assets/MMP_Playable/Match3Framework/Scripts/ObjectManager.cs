@@ -92,9 +92,6 @@ public class ObjectManager : MonoBehaviour
             }
         }
 
-        // Первый этап туториала
-        TutorialHand.Instance.ShowTapTutorialStep(spawnedObjects[0].transform.position);
-
         Debug.Log($"Spawned {m_spawnedObjects.Count} objects from map layout");
     }
 

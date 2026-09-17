@@ -1,43 +1,45 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using UnityEngine;
 
 public class TutorialHand : MonoBehaviour
 {
+    private enum TutorialState
+    {
+        Inactive,
+        PointingBasket,
+        Waiting,
+        Hinting,
+        Holding
+    }
+
     #region Fields
+
     public static TutorialHand Instance { get; private set; }
 
     [SerializeField] private SpriteRenderer m_spriteRenderer;
     [SerializeField] private ObjectManager m_objectManager;
+    [SerializeField] private float m_firstHintDelay = 1.5f;
     [SerializeField] private float m_playerInactivityForTutorial = 4f;
+    [SerializeField] private float m_escalatedInactivity = 2f;
+    [SerializeField] private float m_dragDuration = 0.8f;
+    [SerializeField] private float m_screenMargin = 0.08f;
 
-    private Vector3 m_startAnimationPosition;
-    private Vector3 m_endAnimationPosition;
+    private TutorialState m_state = TutorialState.Inactive;
+    private bool m_isStarted;
 
-    private Color m_startedColor;
-    private Color m_alphaColor;
+    private DragObject m_hintSource;
+    private Vector3 m_hintStartPosition;
+    private Vector3 m_hintTargetPosition;
+    private int m_hintsShown;
 
+    private float m_waitElapsed;
+    private Coroutine m_waitRoutine;
     private Sequence m_handSequence;
 
-    private DragObject m_startedObject;
-    private DragObject m_endObject;
-
-    private bool m_isFirstTutorialStepStarted;
-    private bool m_isSecondTutorialStepStarted;
-    private bool m_isThirdTutorialStepStarted;
-
-    private float m_inactivityTime;
-    private bool m_playerActive = false;
-
-    private Coroutine m_tutorialCoroutine;
-    public Coroutine tutorialCoroutine
-    {
-        get => m_tutorialCoroutine;
-        set => m_tutorialCoroutine = value;
-    }
+    private readonly List<DragObject> m_mergeables = new List<DragObject>();
+    private readonly List<DragObject> m_cluster = new List<DragObject>();
 
     #endregion
 
@@ -51,64 +53,309 @@ public class TutorialHand : MonoBehaviour
             Destroy(gameObject);
     }
 
+    private void Start()
+    {
+        SetHandAlpha(0f);
+    }
+
     private void OnDestroy()
     {
-        foreach (var dragObject in m_objectManager.spawnedObjects)
-        {
-            dragObject.e_onObjectSelected -= OnObjectSelectedToMerge;
-            dragObject.e_onObjectSelected -= OnObjectSelected;
-            dragObject.e_onObjectMoved -= OnObjectMoved;
-        }
+        KillSequence();
+        StopWaiting();
     }
 
     #endregion
 
-    #region Public 
+    #region Public
 
-    public void StopCoroutine()
+    public void BeginTutorial()
     {
-        OnPlayerAction();
+        if (m_isStarted)
+            return;
 
-        if (m_tutorialCoroutine != null)
+        m_isStarted = true;
+
+        if (FindEggBasket() != null)
         {
-            StopCoroutine(tutorialCoroutine);
-            m_tutorialCoroutine = null;
+            ShowNextStep();
+            return;
         }
+
+        ScheduleHint();
     }
 
-    public void SetStartColor()
+    public void NotifyBasketOpened()
     {
-        m_startedColor = Color.white;
-        m_alphaColor = new Color(m_startedColor.r, m_startedColor.g, m_startedColor.b, 0f);
+        ScheduleHint();
     }
 
-    public void ShowTapTutorialStep([Bridge.Ref] Vector3 a_pointPosition)
+    public void NotifyPlayerInput()
     {
-        SetStartColor();
-        StartTutorialPointAnimation(a_pointPosition);
+        m_waitElapsed = 0f;
     }
 
-    public void ShowMovingTutorialStep(DragObject a_startedObject, DragObject a_mergableObject, bool a_needToMerge = false)
+    public void NotifyObjectGrabbed(DragObject a_grabbedObject)
     {
-        SetStartColor();
-        StartTutoriaMovingAnimation(a_startedObject, a_mergableObject, a_needToMerge);
-    }
+        m_waitElapsed = 0f;
 
-    public void StartTutoriaMovingAnimation(DragObject a_startedObject, DragObject a_mergeableObject, bool a_needToMerge)
-    {
-        m_startAnimationPosition = a_startedObject.currentCell.transform.position;
-
-        if (a_mergeableObject == null) return;
-
-        var cell = a_mergeableObject.currentCell;
-
-        if (a_needToMerge)
+        if (m_state == TutorialState.Hinting && IsSameObject(a_grabbedObject, m_hintSource))
         {
-            m_endAnimationPosition = cell.transform.position;
+            m_state = TutorialState.Holding;
+            PlayHoldAnimation(m_hintTargetPosition);
+            return;
+        }
+
+        HideHand();
+
+        m_state = TutorialState.Waiting;
+    }
+
+    public void ScheduleHint()
+    {
+        HideHand();
+
+        m_state = TutorialState.Waiting;
+
+        StopWaiting();
+
+        m_waitRoutine = StartCoroutine(WaitForInactivity(GetNextHintDelay()));
+    }
+
+    public void StopTutorialHandAnimation()
+    {
+        HideHand();
+        StopWaiting();
+
+        m_state = TutorialState.Inactive;
+    }
+
+    #endregion
+
+    #region Private
+
+    private IEnumerator WaitForInactivity(float a_delay)
+    {
+        m_waitElapsed = 0f;
+
+        while (m_waitElapsed < a_delay)
+        {
+            m_waitElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        m_waitRoutine = null;
+
+        ShowNextStep();
+    }
+
+    private void ShowNextStep()
+    {
+        DragObject basket = FindEggBasket();
+
+        if (basket != null)
+        {
+            m_state = TutorialState.PointingBasket;
+            PlayTapAnimation(basket.transform.position);
+            return;
+        }
+
+        if (!TryFindHint())
+        {
+            ScheduleHint();
+            return;
+        }
+
+        m_state = TutorialState.Hinting;
+
+        PlayDragAnimation(m_hintStartPosition, m_hintTargetPosition, m_hintsShown > 1);
+
+        m_hintsShown++;
+    }
+
+    private float GetNextHintDelay()
+    {
+        if (m_hintsShown == 0)
+            return m_firstHintDelay;
+
+        if (m_hintsShown == 1)
+            return m_playerInactivityForTutorial;
+
+        return m_escalatedInactivity;
+    }
+
+    private bool TryFindHint()
+    {
+        m_hintSource = null;
+
+        List<DragObject> objects = m_objectManager.spawnedObjects;
+
+        DragObject mergeSource = null;
+        Vector3 mergeTarget = Vector3.zero;
+        float mergeDistance = float.MaxValue;
+
+        DragObject gatherSource = null;
+        Vector3 gatherTarget = Vector3.zero;
+        float gatherDistance = float.MaxValue;
+
+        for (int i = 0; i < objects.Count; i++)
+        {
+            DragObject source = objects[i];
+
+            if (!IsUsableObject(source) || !source.isAllowedToDrag)
+                continue;
+
+            CollectMergeables(source, objects);
+
+            if (m_mergeables.Count + 1 < source.mergeThreshold)
+                continue;
+
+            Vector3 sourcePosition = source.currentCell.transform.position;
+
+            if (source.mergeThreshold <= 2 && source.isMergeOnPlace)
+            {
+                DragObject partner = GetNearest(source, m_mergeables);
+
+                if (partner == null)
+                    continue;
+
+                Vector3 partnerPosition = partner.currentCell.transform.position;
+                float partnerDistance = (sourcePosition - partnerPosition).sqrMagnitude;
+
+                if (partnerDistance < mergeDistance)
+                {
+                    mergeDistance = partnerDistance;
+                    mergeSource = source;
+                    mergeTarget = partnerPosition;
+                }
+
+                continue;
+            }
+
+            for (int j = 0; j < m_mergeables.Count; j++)
+            {
+                BuildCluster(m_mergeables[j]);
+
+                if (m_cluster.Count + 1 >= source.mergeThreshold)
+                {
+                    DragObject dropTarget = GetNearest(source, m_cluster);
+
+                    if (dropTarget == null)
+                        continue;
+
+                    Vector3 dropPosition = dropTarget.currentCell.transform.position;
+                    float dropDistance = (sourcePosition - dropPosition).sqrMagnitude;
+
+                    if (dropDistance < mergeDistance)
+                    {
+                        mergeDistance = dropDistance;
+                        mergeSource = source;
+                        mergeTarget = dropPosition;
+                    }
+
+                    continue;
+                }
+
+                if (IsNeighborOfCluster(source, m_cluster))
+                    continue;
+
+                GridCell freeCell = FindFreeNeighborCell(m_cluster, source);
+
+                if (freeCell == null)
+                    continue;
+
+                Vector3 gatherPosition = freeCell.transform.position;
+                float gatherCandidateDistance = (sourcePosition - gatherPosition).sqrMagnitude;
+
+                if (gatherCandidateDistance < gatherDistance)
+                {
+                    gatherDistance = gatherCandidateDistance;
+                    gatherSource = source;
+                    gatherTarget = gatherPosition;
+                }
+            }
+        }
+
+        if (mergeSource != null)
+        {
+            m_hintSource = mergeSource;
+            m_hintTargetPosition = mergeTarget;
+        }
+        else if (gatherSource != null)
+        {
+            m_hintSource = gatherSource;
+            m_hintTargetPosition = gatherTarget;
         }
         else
         {
-            var neighbors = new[]
+            return false;
+        }
+
+        m_hintStartPosition = m_hintSource.currentCell.transform.position;
+
+        return true;
+    }
+
+    private void CollectMergeables(DragObject a_source, List<DragObject> a_objects)
+    {
+        m_mergeables.Clear();
+
+        for (int i = 0; i < a_objects.Count; i++)
+        {
+            DragObject candidate = a_objects[i];
+
+            if (IsSameObject(candidate, a_source) || !IsUsableObject(candidate))
+                continue;
+
+            if (a_source.CanMergeWith(candidate))
+                m_mergeables.Add(candidate);
+        }
+    }
+
+    private void BuildCluster(DragObject a_seed)
+    {
+        m_cluster.Clear();
+        m_cluster.Add(a_seed);
+
+        for (int head = 0; head < m_cluster.Count; head++)
+        {
+            DragObject current = m_cluster[head];
+
+            for (int i = 0; i < m_mergeables.Count; i++)
+            {
+                DragObject candidate = m_mergeables[i];
+
+                if (Contains(m_cluster, candidate))
+                    continue;
+
+                if (current.IsNeighborWith(candidate))
+                    m_cluster.Add(candidate);
+            }
+        }
+    }
+
+    private bool IsNeighborOfCluster(DragObject a_source, List<DragObject> a_cluster)
+    {
+        for (int i = 0; i < a_cluster.Count; i++)
+        {
+            if (a_source.IsNeighborWith(a_cluster[i]))
+                return true;
+        }
+
+        return false;
+    }
+
+    private GridCell FindFreeNeighborCell(List<DragObject> a_cluster, DragObject a_source)
+    {
+        GridCell foggedFallback = null;
+
+        for (int i = 0; i < a_cluster.Count; i++)
+        {
+            GridCell cell = a_cluster[i].currentCell;
+
+            if (cell == null)
+                continue;
+
+            GridCell[] neighbors = new[]
             {
                 cell.RightNeighbor,
                 cell.LeftNeighbor,
@@ -116,42 +363,186 @@ public class TutorialHand : MonoBehaviour
                 cell.BottomNeighbor
             };
 
-            var freeNeighbor = neighbors.FirstOrDefault(n => n != null && !n.IsOccupied);
+            for (int j = 0; j < neighbors.Length; j++)
+            {
+                GridCell neighbor = neighbors[j];
 
-            if (freeNeighbor == null)
-                return;
+                if (neighbor == null || neighbor.IsOccupied)
+                    continue;
 
-            m_endAnimationPosition = freeNeighbor.transform.position;
+                if (neighbor == a_source.currentCell)
+                    continue;
+
+                if (!IsOnScreen(neighbor.transform.position))
+                    continue;
+
+                if (neighbor.isFogged)
+                {
+                    if (foggedFallback == null)
+                        foggedFallback = neighbor;
+
+                    continue;
+                }
+
+                return neighbor;
+            }
         }
 
-        m_startedObject = a_startedObject;
-        m_endObject = a_mergeableObject;
-
-        transform.position = m_startAnimationPosition;
-        transform.gameObject.SetActive(true);
-
-        if (a_needToMerge)
-            a_startedObject.e_onObjectSelected += OnObjectSelectedToMerge;
-        else
-            a_startedObject.e_onObjectSelected += OnObjectSelected;
-
-        StartTutorialMoveHandAnimation();
+        return foggedFallback;
     }
 
-    public void StartTutorialPointAnimation([Bridge.Ref] Vector3 a_pointToShow)
+    private DragObject GetNearest(DragObject a_source, List<DragObject> a_candidates)
     {
-        m_startAnimationPosition = a_pointToShow;
+        DragObject nearest = null;
+        float nearestDistance = float.MaxValue;
 
-        transform.position = m_startAnimationPosition;
-        transform.gameObject.SetActive(true);
+        Vector3 sourcePosition = a_source.currentCell.transform.position;
 
-        foreach (var dragObject in m_objectManager.spawnedObjects)
-            dragObject.e_onObjectMoved += OnObjectMoved;
+        for (int i = 0; i < a_candidates.Count; i++)
+        {
+            float distance = (sourcePosition - a_candidates[i].currentCell.transform.position).sqrMagnitude;
 
-        StartTutorialTapHandAnimation();
+            if (distance < nearestDistance)
+            {
+                nearestDistance = distance;
+                nearest = a_candidates[i];
+            }
+        }
+
+        return nearest;
     }
 
-    public void StopTutorialHandAnimation()
+    private DragObject FindEggBasket()
+    {
+        List<DragObject> objects = m_objectManager.spawnedObjects;
+
+        for (int i = 0; i < objects.Count; i++)
+        {
+            DragObject candidate = objects[i];
+
+            if (candidate == null || !candidate.gameObject.activeSelf)
+                continue;
+
+            if (candidate.eggBasket != null && IsOnScreen(candidate.transform.position))
+                return candidate;
+        }
+
+        return null;
+    }
+
+    private bool IsUsableObject(DragObject a_object)
+    {
+        return a_object != null
+            && a_object.gameObject.activeSelf
+            && a_object.canBeMerged
+            && a_object.currentCell != null
+            && a_object.eggBasket == null
+            && IsOnScreen(a_object.currentCell.transform.position);
+    }
+
+    private bool IsOnScreen([Bridge.Ref] Vector3 a_worldPosition)
+    {
+        Camera camera = Camera.main;
+
+        if (camera == null)
+            return true;
+
+        Vector3 viewportPoint = camera.WorldToViewportPoint(a_worldPosition);
+
+        return viewportPoint.z > 0f
+            && viewportPoint.x >= m_screenMargin
+            && viewportPoint.x <= 1f - m_screenMargin
+            && viewportPoint.y >= m_screenMargin
+            && viewportPoint.y <= 1f - m_screenMargin;
+    }
+
+    private void PlayTapAnimation([Bridge.Ref] Vector3 a_position)
+    {
+        KillSequence();
+
+        transform.position = a_position;
+        transform.localScale = Vector3.one;
+        gameObject.SetActive(true);
+        SetHandAlpha(0f);
+
+        m_handSequence = DOTween.Sequence();
+
+        m_handSequence.Append(m_spriteRenderer.DOFade(1f, 0.4f))
+                      .Append(transform.DOScale(0.9f, 0.15f).SetEase(Ease.InOutSine))
+                      .Append(transform.DOScale(1f, 0.15f).SetEase(Ease.InOutSine))
+                      .AppendInterval(0.1f)
+                      .Append(transform.DOScale(0.9f, 0.15f).SetEase(Ease.InOutSine))
+                      .Append(transform.DOScale(1f, 0.15f).SetEase(Ease.InOutSine))
+                      .AppendInterval(0.7f)
+                      .Append(m_spriteRenderer.DOFade(0f, 0.4f))
+                      .AppendInterval(0.3f)
+                      .SetLoops(-1, LoopType.Restart)
+                      .Play();
+    }
+
+    private void PlayDragAnimation([Bridge.Ref] Vector3 a_from, [Bridge.Ref] Vector3 a_to, bool a_escalated)
+    {
+        KillSequence();
+
+        transform.position = a_from;
+        transform.localScale = Vector3.one;
+        gameObject.SetActive(true);
+        SetHandAlpha(0f);
+
+        float moveDuration = a_escalated ? m_dragDuration * 0.7f : m_dragDuration;
+        float tailInterval = a_escalated ? 0.15f : 0.4f;
+
+        m_handSequence = DOTween.Sequence();
+
+        m_handSequence.Append(m_spriteRenderer.DOFade(1f, 0.35f))
+                      .Append(transform.DOScale(0.85f, 0.15f).SetEase(Ease.OutSine))
+                      .Append(transform.DOMove(a_to, moveDuration).SetEase(Ease.InOutSine))
+                      .Append(transform.DOScale(1f, 0.15f).SetEase(Ease.OutBack))
+                      .AppendInterval(0.2f)
+                      .Append(m_spriteRenderer.DOFade(0f, 0.3f))
+                      .AppendCallback(() => transform.position = a_from)
+                      .AppendInterval(tailInterval)
+                      .SetLoops(-1, LoopType.Restart)
+                      .Play();
+    }
+
+    private void PlayHoldAnimation([Bridge.Ref] Vector3 a_position)
+    {
+        KillSequence();
+
+        transform.position = a_position;
+        transform.localScale = Vector3.one;
+        gameObject.SetActive(true);
+
+        m_handSequence = DOTween.Sequence();
+
+        m_handSequence.Append(m_spriteRenderer.DOFade(1f, 0.2f))
+                      .Append(transform.DOScale(0.85f, 0.4f).SetEase(Ease.InOutSine))
+                      .Append(transform.DOScale(1f, 0.4f).SetEase(Ease.InOutSine))
+                      .SetLoops(-1, LoopType.Restart)
+                      .Play();
+    }
+
+    private void HideHand()
+    {
+        KillSequence();
+
+        if (m_spriteRenderer != null)
+            m_spriteRenderer.DOFade(0f, 0.2f);
+    }
+
+    private void SetHandAlpha(float a_alpha)
+    {
+        if (m_spriteRenderer == null)
+            return;
+
+        Color color = Color.white;
+        color.a = a_alpha;
+
+        m_spriteRenderer.color = color;
+    }
+
+    private void KillSequence()
     {
         if (m_handSequence != null)
         {
@@ -159,278 +550,35 @@ public class TutorialHand : MonoBehaviour
             m_handSequence = null;
         }
 
-        m_spriteRenderer.DOFade(0f, 0.3f);
+        transform.DOKill();
+
+        if (m_spriteRenderer != null)
+            m_spriteRenderer.DOKill();
     }
 
-    public async void ActivateTutorialAfterPlayerInactivity()
+    private void StopWaiting()
     {
-        await Task.Delay(1000);
-
-        if (m_tutorialCoroutine != null)
-            return;
-
-        List<DragObject> mergeCandidate = new List<DragObject>();
-
-        var groupsCandidates = new Dictionary<(string objectType, int level), List<DragObject>>();
-
-        foreach (var obj in m_objectManager.spawnedObjects)
+        if (m_waitRoutine != null)
         {
-            if (!obj.canBeMerged)
-                continue;
-
-            var key = (obj.objectType, obj.level);
-
-            if (!groupsCandidates.ContainsKey(key))
-                groupsCandidates[key] = new List<DragObject>();
-
-            groupsCandidates[key].Add(obj);
-        }
-
-        // теперь ищем первую группу, где 2 и более объектов
-        foreach (var group in groupsCandidates.Values)
-        {
-            if (group.Count >= 2)
-            {
-                mergeCandidate = group;
-                break;
-            }
-        } // выбираем первую подходящую группу
-
-        Debug.Log("After Merge Candidate");
-
-        if (mergeCandidate == null)
-        {
-            Debug.Log("MergeCandidate == null");
-            return;
-        }
-        else
-        {
-            Debug.Log("MergeCandidate != null");
-        }
-
-        bool isMergeNeeded = false;
-
-        var groups = new Dictionary<(string objectType, int level), List<DragObject>>();
-
-        foreach (var obj in mergeCandidate)
-        {
-            if (!obj.canBeMerged)
-                continue;
-
-            var key = (obj.objectType, obj.level);
-
-            if (!groups.ContainsKey(key))
-                groups[key] = new List<DragObject>();
-
-            groups[key].Add(obj);
-        }
-
-        // Проверяем каждую группу
-        foreach (var group in groups.Values)
-        {
-            if (group.Count < group[0].mergeThreshold)
-                continue;
-
-            // Проверяем все пары объектов внутри группы
-            for (int i = 0; i < group.Count; i++)
-            {
-                for (int j = i + 1; j < group.Count; j++)
-                {
-                    if (group[i].IsNeighborWith(group[j]))
-                    {
-                        isMergeNeeded = true;
-                        break;
-                    }
-                }
-
-                if (isMergeNeeded)
-                    break;
-            }
-
-            if (isMergeNeeded)
-                break;
-        }
-
-        Debug.Log("After bool IsNeeded");
-
-        // если нашли подходящие объекты — берём первый для примера
-        List<DragObject> isolatedCandidates = new List<DragObject>();
-
-        foreach (var obj in mergeCandidate)
-        {
-            bool hasNeighbor = false;
-
-            foreach (var other in mergeCandidate)
-            {
-                if (other == obj)
-                    continue;
-
-                if (obj.objectType == other.objectType &&
-                    obj.level == other.level &&
-                    obj.IsNeighborWith(other))
-                {
-                    hasNeighbor = true;
-                    break;
-                }
-            }
-
-            if (!hasNeighbor)
-                isolatedCandidates.Add(obj);
-        }
-
-        Debug.Log("After Isolated Candidates");
-
-        // если таких нет — fallback: берём любой
-        var exampleObject = isolatedCandidates.FirstOrDefault() ?? mergeCandidate.FirstOrDefault();
-
-        Debug.Log("After exampleObject");
-
-        if (exampleObject != null)
-        {
-            Debug.Log("ExampleObject is not null");
-            m_tutorialCoroutine = StartCoroutine(TutorialAfterInactivity(exampleObject, isMergeNeeded));
+            StopCoroutine(m_waitRoutine);
+            m_waitRoutine = null;
         }
     }
 
-    #endregion
-
-    #region Private
-
-    private IEnumerator TutorialAfterInactivity(DragObject a_dragObject, bool a_needToMerge)
+    private static bool IsSameObject(DragObject a_first, DragObject a_second)
     {
-        Debug.Log("Inside Coroutine");
+        return ReferenceEquals(a_first, a_second);
+    }
 
-        if (a_dragObject == null) yield break;
-
-        m_inactivityTime = 0f;
-        m_playerActive = false;
-
-        while (m_inactivityTime < m_playerInactivityForTutorial)
+    private static bool Contains(List<DragObject> a_list, DragObject a_item)
+    {
+        for (int i = 0; i < a_list.Count; i++)
         {
-            if (m_playerActive)
-                yield break; // игрок проявил активность — отменяем запуск туториала
-
-            m_inactivityTime += Time.deltaTime;
-            yield return null;
+            if (ReferenceEquals(a_list[i], a_item))
+                return true;
         }
 
-        // если прошло 4 секунды и игрок не активен
-        if (!m_playerActive)
-            ShowMovingTutorialStep(a_dragObject, m_objectManager.spawnedObjects
-                .FirstOrDefault(x => x.objectType == a_dragObject.objectType
-                             && x != a_dragObject && x.canBeMerged), a_needToMerge);
-
-        m_tutorialCoroutine = null;
-    }
-
-    // Вызывать этот метод при любом действии игрока (тап, свайп и т.п.)
-    private void OnPlayerAction()
-    {
-        m_playerActive = true;
-    }
-
-    private void OnObjectSelected(DragObject a_dragObject)
-    {
-        var cell = (a_dragObject == m_endObject)
-            ? m_startedObject.currentCell
-            : m_endObject.currentCell;
-
-        var neighbors = new[]
-        {
-            cell.RightNeighbor,
-            cell.LeftNeighbor,
-            cell.TopNeighbor,
-            cell.BottomNeighbor
-    };
-
-        GridCell freeNeighbor = neighbors.FirstOrDefault(n => n != null && !n.IsOccupied);
-
-        if (freeNeighbor == null)
-            return;
-
-        StartTutorialPointAnimation(freeNeighbor.transform.position);
-
-        m_startedObject.e_onObjectSelected -= OnObjectSelected;
-    }
-
-    private void OnObjectSelectedToMerge(DragObject a_dragObject)
-    {
-        if (a_dragObject == m_endObject)
-            StartTutorialPointAnimation(m_startedObject.transform.position);
-        else
-            StartTutorialPointAnimation(m_endObject.transform.position);
-
-        m_startedObject.e_onObjectSelected -= OnObjectSelectedToMerge;
-    }
-
-    private void OnObjectMoved(DragObject a_dragObject)
-    {
-        foreach (var dragObject in m_objectManager.spawnedObjects)
-        {
-            if (a_dragObject.IsNeighborWith(dragObject) && m_endAnimationPosition == a_dragObject.currentCell.transform.position)
-            {
-                StopTutorialHandAnimation();
-                m_startedObject.e_onObjectMoved -= OnObjectMoved;
-
-                return;
-            }
-        }
-    }
-
-    private void StartTutorialTapHandAnimation()
-    {
-        if (m_handSequence != null)
-        {
-            m_handSequence.Kill();
-        }
-
-        // Сбрасываем состояние
-        transform.localScale = Vector3.one;
-        m_spriteRenderer.color = m_startedColor;
-
-        m_handSequence = DOTween.Sequence();
-
-        // Анимация "двойного тапа"
-        m_handSequence.Append(m_spriteRenderer.DOFade(1f, 0.5f)) // плавное появление
-                                                                 // Первый тап — уменьшение и возврат
-                      .Append(transform.DOScale(0.9f, 0.15f).SetEase(Ease.InOutSine))
-                      .Append(transform.DOScale(1f, 0.15f).SetEase(Ease.InOutSine))
-                      // Небольшая пауза между кликами
-                      .AppendInterval(0.1f)
-                      // Второй тап — тоже уменьшение и возврат
-                      .Append(transform.DOScale(0.9f, 0.15f).SetEase(Ease.InOutSine))
-                      .Append(transform.DOScale(1f, 0.15f).SetEase(Ease.InOutSine))
-                      // Задержка перед повтором
-                      .AppendInterval(0.7f)
-                      // Исчезание перед циклом
-                      .Append(m_spriteRenderer.DOFade(0f, 0.5f))
-                      .AppendInterval(0.3f)
-                      .SetLoops(-1, LoopType.Restart) // бесконечный повтор
-                      .Play();
-    }
-
-    private void StartTutorialMoveHandAnimation()
-    {
-        if (m_handSequence != null)
-        {
-            m_handSequence.Kill();
-        }
-
-        m_spriteRenderer.color = m_alphaColor;
-        transform.position = m_startAnimationPosition;
-
-        // Создаём последовательность
-        m_handSequence = DOTween.Sequence();
-
-        m_handSequence.Append(m_spriteRenderer.DOFade(1f, 0.5f)) // Плавное появление
-                      .Append(transform.DOMove(m_endAnimationPosition, 1f).SetEase(Ease.InOutSine)) // Движение
-                      .Append(m_spriteRenderer.DOFade(0f, 0.5f)) // Исчезание
-                      .AppendCallback(() =>
-                      {
-                          transform.position = m_startAnimationPosition; // Вернуться в начало
-                      })
-                      .SetLoops(-1, LoopType.Restart) // Бесконечный повтор цикла
-                      .Play();
+        return false;
     }
 
     #endregion

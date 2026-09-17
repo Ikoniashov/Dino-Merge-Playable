@@ -44,6 +44,8 @@ public class DinoSelectionManager : MonoBehaviour
 
     [SerializeField] private Image m_rewardCardImage;
 
+    [SerializeField] private Button m_rewardCardButton;
+
     [SerializeField] private GameObject m_carouselGroup;
 
     private ObjectSet m_currentObjectSet;
@@ -67,6 +69,8 @@ public class DinoSelectionManager : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
+
+        SetRewardCardButtonActive(false);
     }
 
     private void OnEnable()
@@ -74,6 +78,7 @@ public class DinoSelectionManager : MonoBehaviour
         m_nextDinoButton.onClick.AddListener(ShowNextDino);
         m_previousDinoButton.onClick.AddListener(ShowPreviousDino);
         m_chooseDinoButton.onClick.AddListener(ChooseDino);
+        m_rewardCardButton.onClick.AddListener(FinishPlayable);
     }
 
     private void OnDisable()
@@ -81,6 +86,7 @@ public class DinoSelectionManager : MonoBehaviour
         m_nextDinoButton.onClick.RemoveAllListeners();
         m_previousDinoButton.onClick.RemoveAllListeners();
         m_chooseDinoButton.onClick.RemoveAllListeners();
+        m_rewardCardButton.onClick.RemoveAllListeners();
     }
 
     #endregion
@@ -120,12 +126,31 @@ public class DinoSelectionManager : MonoBehaviour
 
         await Task.Delay(1000);
 
-        PlayableCta.FinishAndOpenStore();
+        PlayableCta.GameEnded();
+
+        SetRewardCardButtonActive(true);
     }
 
     #endregion
 
     #region Private
+
+    private void SetRewardCardButtonActive(bool a_isActive)
+    {
+        m_rewardCardButton.interactable = a_isActive;
+
+        foreach (Graphic graphic in m_rewardCardButton.GetComponentsInChildren<Graphic>(true))
+            graphic.raycastTarget = a_isActive;
+    }
+
+    private void FinishPlayable()
+    {
+        m_rewardCardButton.onClick.RemoveAllListeners();
+
+        AudioSystem.Instance.PlayClickSound();
+
+        PlayableCta.FinishAndOpenStore();
+    }
 
     private void ApplyChosenSet(ObjectSet a_selectedSet)
     {
@@ -184,6 +209,8 @@ public class DinoSelectionManager : MonoBehaviour
         m_carouselGroup.SetActive(false);
 
         m_chooseDinoButton.gameObject.SetActive(false);
+
+        TutorialHand.Instance.BeginTutorial();
     }
 
     private void ShowNextDino()

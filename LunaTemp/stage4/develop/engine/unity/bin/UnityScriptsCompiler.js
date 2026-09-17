@@ -1,6 +1,6 @@
-if ( TRACE ) { TRACE( JSON.parse( '["AudioSystem#Awake","AudioSystem#PlayMergeSound","AudioSystem#PlayChooseSound","AudioSystem#PlayFogDissolveSound","AudioSystem#PlayOpenEggBasketSound","AudioSystem#PlayClickSound","AudioSystem#PlaySound","AudioSystem#GetFreeAudioSource","CameraController#init","CameraController#Awake","CameraController#Update","CameraController#MoveToPosition","CameraController#CheckRaycastHit","CameraController#ChangeCamerasZoom","CameraController#HandleInput","CameraController#HandleZoom","CameraController#CamInertia","CameraController#GetLimitedCameraPosition","DecorationObject#objectType#get","DecorationObject#currentCell#get","DecorationObject#currentCell#set","DecorationObject#init","DecorationObject#Initialize","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","DinoCarousel#init","DinoCarousel#Start","DinoCarousel#GetCurrentIndex","DinoCarousel#HideSelectionChrome","DinoCarousel#ChangeToRight","DinoCarousel#ChangeToLeft","DinoCarousel#AnimateTransition","DinoCarousel#PrepareSprite","DinoCarousel#ResetAllSprites","DinoSelectionManager#CurrentObjectSet#get","DinoSelectionManager#Awake","DinoSelectionManager#OnEnable","DinoSelectionManager#OnDisable","DinoSelectionManager#ApplyObjectSetToMap","DinoSelectionManager#ShowRewardCardFinal","DinoSelectionManager#ApplyChosenSet","DinoSelectionManager#ChooseDino","DinoSelectionManager#HideChoosingScreen","DinoSelectionManager#ShowNextDino","DinoSelectionManager#ShowPreviousDino","DragManager#ContainsObject","DragManager#Distinct","DragManager#IsDragging#get","DragManager#init","DragManager#Awake","DragManager#Update","DragManager#StartDrag","DragManager#HandleInput","DragManager#TryStartDrag","DragManager#HandleDrag","DragManager#TrackHoveredCell","DragManager#UpdatePotentialMergeGroup","DragManager#StartPullingGroup","DragManager#StopPullingCurrentGroup","DragManager#FindHoveredCell","DragManager#EndDrag","DragManager#GetMergeSubset","DragManager#TryMoveToCell","DragManager#MoveObjectToCell","DragManager#SnapToCell","DragManager#CheckForMerge","DragManager#MergeGroup","DragManager#MergeGroupWithDelay","DragManager#FindMergeGroupVirtual","DragManager#FindMergeGroup","DragManager#ReturnToPreviousCell","DragObject#objectManager#get","DragObject#eggBasket#get","DragObject#indicatorObject#get","DragObject#objectType#get","DragObject#level#get","DragObject#canBeMerged#get","DragObject#canBeMerged#set","DragObject#mergeThreshold#get","DragObject#isMergeOnPlace#get","DragObject#isMergeThisObjectRevealFog#get","DragObject#isAllowedToDrag#get","DragObject#isAllowedToDrag#set","DragObject#currentCell#get","DragObject#currentCell#set","DragObject#init","DragObject#Start","DragObject#Update","DragObject#OnDisable","DragObject#OnDestroy","DragObject#OnDrawGizmos","DragObject#Initialize","DragObject#StartLevitation","DragObject#StartPulling","DragObject#GetSpawnCountForMerge","DragObject#StopPulling","DragObject#FlyTo","DragObject#OnMoved","DragObject#CanMergeWith","DragObject#GetMergedType","DragObject#SetLevel","DragObject#PlaySelectAnimation","DragObject#OnSelectObject","DragObject#DestroyWithAnimation","DragObject#IsNeighborWith","DragObject#GetDistanceTo","DragObject#VacateCurrentCell","DragObject#StopCurrentTween","DragObject#IsSpecialMergeWith","DragObject#DestroyAnimation","EggBasket#init","EggBasket#Start","EggBasket#ActivateBasket","EggBasket#Resolve","EggBasket#InitializeTutorial","EggBasket#DestroyBasket","EggBasket#SpawnEggAt","EggBasket#AnimateMovingToCell","FlyableMergeObject#indicatorObject#get","FlyableMergeObject#objectType#get","FlyableMergeObject#mergeTreshold#get","FlyableMergeObject#level#get","FlyableMergeObject#isAllowedToDrag#get","FlyableMergeObject#isAllowedToDrag#set","FlyableMergeObject#init","FlyableMergeObject#Start","FlyableMergeObject#Update","FlyableMergeObject#OnDestroy","FlyableMergeObject#DestroyWithAnimation","FlyableMergeObject#GetSpawnCountForMerge","FlyableMergeObject#SetLevel","FlyableMergeObject#Initialize","FlyableMergeObject#StartPulling","FlyableMergeObject#StopPulling","FlyableMergeObject#PlaySelectAnimation","FlyableMergeObject#FlyTo","FlyableMergeObject#GetMergedType","FlyableMergeObject#CanMergeWith","FlyableMergeObject#OnSelectObject","FlyableMergeObject#SetPrincessReadyToMerge","FlyableMergeObject#InitializeFromPosition","FlyableMergeObject#MoveToNextPoint","FlyableMergeObject#StopFlying","FlyableMergeObject#ContinueFlying","FlyableMergeObject#DestroyAnimation","FlyableMergeObject#StopCurrentTween","FlyingDragManager#IsDragging#get","FlyingDragManager#init","FlyingDragManager#Awake","FlyingDragManager#Update","FlyingDragManager#StartDrag","FlyingDragManager#HandleInput","FlyingDragManager#TryStartDrag","FlyingDragManager#HandleDrag","FlyingDragManager#TrackHoveredCell","FlyingDragManager#UpdatePotentialMergeGroup","FlyingDragManager#StartPullingGroup","FlyingDragManager#StopPullingCurrentGroup","FlyingDragManager#FindHoveredCell","FlyingDragManager#EndDrag","FlyingDragManager#CheckForMerge","FlyingDragManager#MergeGroup","FlyingDragManager#MergeGroupWithDelay","FlyingObjectsManager#flyableObjects#get","FlyingObjectsManager#init","FlyingObjectsManager#CreateFlyingPrincess","FlyingObjectsManager#AddPrincessToFlyableObjects","FlyingObjectsManager#ActivateAllPrincess","FlyingObjectsManager#InstantiatePrincess","FogManager#init","FogManager#Initialize","FogManager#SpawnMapObjects","FogManager#RevealFog","FogManager#RevealFogAtCell","FogManager#SpawnFogAtCell","FogManager#MoveObjectToCell","FogManager#ClearAllObjects","FogManager#GetObjectAtCell","FogObject#currentCell#get","FogObject#init","FogObject#Awake","FogObject#OnDrawGizmos","FogObject#Initialize","FogObject#MoveToCell","FogObject#VacateCurrentCell","FogObject#Reveal","FogObject#Hide","FogObject#SetInitialState","FogObject#RevealAnimation","FogObject#HideAnimation","FogObject#OnRevealStart","FogObject#OnRevealComplete","FogObject#OnHideStart","FogObject#OnHideComplete","FogObject#GetFogGizmoColor","GridCell#xIndex#get","GridCell#yIndex#get","GridCell#LeftNeighbor#get","GridCell#LeftNeighbor#set","GridCell#RightNeighbor#get","GridCell#RightNeighbor#set","GridCell#TopNeighbor#get","GridCell#TopNeighbor#set","GridCell#BottomNeighbor#get","GridCell#BottomNeighbor#set","GridCell#fogObject#get","GridCell#ObjectInCell#get","GridCell#decorationInCell#get","GridCell#IsOccupied#get","GridCell#isEmpty#get","GridCell#isFogged#get","GridCell#Center#get","GridCell#init","GridCell#OnDestroy","GridCell#OnDrawGizmos","GridCell#Initialize","GridCell#HideCellContents","GridCell#SetFogObject","GridCell#Occupy$2","GridCell#Occupy$1","GridCell#Occupy","GridCell#Vacate","GridCell#SetObjectOnCell","GridCell#InitializeCellComponents","GridCell#OnFogRevealed","GridCell#OnFogHidden","GridCell#ShowCellContents","MainSystem#init","MainSystem#WorldToGridCoordinates","MainSystem#GridToWorldCoordinates","MainSystem#totalCells#get","MainSystem#allCells#get","MainSystem#init","MainSystem#Awake","MainSystem#Start","MainSystem#CreateGridObjects","MainSystem#CreateGrid","MainSystem#GetNeighborCells","MainSystem#GetAllAdjacentCells","MainSystem#GetCellAtPosition","MainSystem#SpawnCell","MainSystem#GetCell","MainSystem#GetNeighbors","MainSystem#GetNearestEmptyCells","MainSystem#InitializeSubsystems","MainSystem#InitializeCellArray","MainSystem#CreateRectangleGrid","MainSystem#CreateCustomShapeGrid","MainSystem#ExpandGridArray","MainSystem#EstablishCellConnections","MainSystem#EstablishCellNeighbors","MapFogLayoutManager#init","MapFogLayoutManager#AddFogToCell","MapFogLayoutManager#RemoveFogFromCell","MapFogLayoutManager#ClearMap","MapFogLayoutManager#GetMapData","MapFogLayoutManager#GetFogCells","MapFogLayoutManager.MapFogLayout#init","MapFogLayoutManager.MapFogLayout#SetCellData","MapFogLayoutManager.MapFogLayout#GetAllFogCells","MapFogLayoutManager.MapFogLayout#Clear","MapObjectLayoutManager#init","MapObjectLayoutManager#AddObjectToCell","MapObjectLayoutManager#RemoveObjectFromCell","MapObjectLayoutManager#ClearMap","MapObjectLayoutManager#GetMapData","MapObjectLayoutManager#GetObjectCells","MapObjectLayoutManager.CellObjectData#init","MapObjectLayoutManager.MapObjectLayout#init","MapObjectLayoutManager.MapObjectLayout#SetCellData","MapObjectLayoutManager.MapObjectLayout#GetCellObjectType","MapObjectLayoutManager.MapObjectLayout#GetAllObjectCells","MapObjectLayoutManager.MapObjectLayout#Clear","ObjectManager#tapTextTutorial#get","ObjectManager#spawnedObjects#get","ObjectManager#spawnedDecorationObjects#get","ObjectManager#init","ObjectManager#Awake","ObjectManager#Initialize","ObjectManager#ClearAllObjects","ObjectManager#GetObjectAtCell","ObjectManager#GetObjectsByType","ObjectManager#SpawnMapObjects","ObjectManager#SpawnStartedObject","ObjectManager#SpawnObject$1","ObjectManager#SpawnObject","PlayableCta#GameStarted","PlayableCta#GameEnded","PlayableCta#OpenStore","PlayableCta#FinishAndOpenStore","PlayNowButton#init","PlayNowButton#OnEnable","PlayNowButton#Start","PlayNowButton#OnDisable","PlayNowButton#OnDestroy","PlayNowButton#GoToStore","PlayNowButton#CreatePulseAnimation","PointsManager#pointsToFlying#get","PointsManager#init","PointsManager#Awake","PointsManager#CreatePoints","TutorialHand#tutorialCoroutine#get","TutorialHand#tutorialCoroutine#set","TutorialHand#init","TutorialHand#Awake","TutorialHand#OnDestroy","TutorialHand#StopCoroutine$3","TutorialHand#SetStartColor","TutorialHand#ShowTapTutorialStep","TutorialHand#ShowMovingTutorialStep","TutorialHand#StartTutoriaMovingAnimation","TutorialHand#StartTutorialPointAnimation","TutorialHand#StopTutorialHandAnimation","TutorialHand#ActivateTutorialAfterPlayerInactivity","TutorialHand#TutorialAfterInactivity","TutorialHand#OnPlayerAction","TutorialHand#OnObjectSelected","TutorialHand#OnObjectSelectedToMerge","TutorialHand#OnObjectMoved","TutorialHand#StartTutorialTapHandAnimation","TutorialHand#StartTutorialMoveHandAnimation","TutorialHandPointer#init","TutorialHandPointer#Start","TutorialHandPointer#StartTutorialPointAnimation","TutorialHandPointer#StopTutorialHandAnimation","TutorialHandPointer#StartDoubleTapLoop","UIExtensions#FadeGroup"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["AudioSystem#Awake","AudioSystem#PlayMergeSound","AudioSystem#PlayChooseSound","AudioSystem#PlayFogDissolveSound","AudioSystem#PlayOpenEggBasketSound","AudioSystem#PlayClickSound","AudioSystem#PlaySound","AudioSystem#GetFreeAudioSource","CameraController#init","CameraController#Awake","CameraController#Update","CameraController#MoveToPosition","CameraController#CheckRaycastHit","CameraController#ChangeCamerasZoom","CameraController#HandleInput","CameraController#HandleZoom","CameraController#CamInertia","CameraController#GetLimitedCameraPosition","DecorationObject#objectType#get","DecorationObject#currentCell#get","DecorationObject#currentCell#set","DecorationObject#init","DecorationObject#Initialize","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForCompletion#ctor","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForElapsedLoops#ctor","DG.Tweening.DOTweenCYInstruction.WaitForKill#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForKill#ctor","DG.Tweening.DOTweenCYInstruction.WaitForPosition#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForPosition#ctor","DG.Tweening.DOTweenCYInstruction.WaitForRewind#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForRewind#ctor","DG.Tweening.DOTweenCYInstruction.WaitForStart#keepWaiting#get","DG.Tweening.DOTweenCYInstruction.WaitForStart#ctor","DG.Tweening.DOTweenModuleAudio#DOFade","DG.Tweening.DOTweenModuleAudio#DOPitch","DG.Tweening.DOTweenModuleAudio#DOSetFloat","DG.Tweening.DOTweenModuleAudio#DOComplete","DG.Tweening.DOTweenModuleAudio#DOKill","DG.Tweening.DOTweenModuleAudio#DOFlip","DG.Tweening.DOTweenModuleAudio#DOGoto","DG.Tweening.DOTweenModuleAudio#DOPause","DG.Tweening.DOTweenModuleAudio#DOPlay","DG.Tweening.DOTweenModuleAudio#DOPlayBackwards","DG.Tweening.DOTweenModuleAudio#DOPlayForward","DG.Tweening.DOTweenModuleAudio#DORestart","DG.Tweening.DOTweenModuleAudio#DORewind","DG.Tweening.DOTweenModuleAudio#DOSmoothRewind","DG.Tweening.DOTweenModuleAudio#DOTogglePause","DG.Tweening.DOTweenModulePhysics#DOMove","DG.Tweening.DOTweenModulePhysics#DOMoveX","DG.Tweening.DOTweenModulePhysics#DOMoveY","DG.Tweening.DOTweenModulePhysics#DOMoveZ","DG.Tweening.DOTweenModulePhysics#DORotate","DG.Tweening.DOTweenModulePhysics#DOLookAt","DG.Tweening.DOTweenModulePhysics#DOJump","DG.Tweening.DOTweenModulePhysics#DOPath","DG.Tweening.DOTweenModulePhysics#DOPath$1","DG.Tweening.DOTweenModulePhysics#DOLocalPath","DG.Tweening.DOTweenModulePhysics#DOLocalPath$1","DG.Tweening.DOTweenModulePhysics2D#DOMove","DG.Tweening.DOTweenModulePhysics2D#DOMoveX","DG.Tweening.DOTweenModulePhysics2D#DOMoveY","DG.Tweening.DOTweenModulePhysics2D#DORotate","DG.Tweening.DOTweenModulePhysics2D#DOJump","DG.Tweening.DOTweenModulePhysics2D#DOPath","DG.Tweening.DOTweenModulePhysics2D#DOPath$1","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath","DG.Tweening.DOTweenModulePhysics2D#DOLocalPath$1","DG.Tweening.DOTweenModuleSprite#DOColor","DG.Tweening.DOTweenModuleSprite#DOFade","DG.Tweening.DOTweenModuleSprite#DOGradientColor","DG.Tweening.DOTweenModuleSprite#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOFade","DG.Tweening.DOTweenModuleUI#DOFade$1","DG.Tweening.DOTweenModuleUI#DOFade$2","DG.Tweening.DOTweenModuleUI#DOFade$3","DG.Tweening.DOTweenModuleUI#DOFade$4","DG.Tweening.DOTweenModuleUI#DOColor","DG.Tweening.DOTweenModuleUI#DOColor$1","DG.Tweening.DOTweenModuleUI#DOColor$2","DG.Tweening.DOTweenModuleUI#DOColor$3","DG.Tweening.DOTweenModuleUI#DOFillAmount","DG.Tweening.DOTweenModuleUI#DOGradientColor","DG.Tweening.DOTweenModuleUI#DOFlexibleSize","DG.Tweening.DOTweenModuleUI#DOMinSize","DG.Tweening.DOTweenModuleUI#DOPreferredSize","DG.Tweening.DOTweenModuleUI#DOScale","DG.Tweening.DOTweenModuleUI#DOAnchorPos","DG.Tweening.DOTweenModuleUI#DOAnchorPosX","DG.Tweening.DOTweenModuleUI#DOAnchorPosY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3D","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DX","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DY","DG.Tweening.DOTweenModuleUI#DOAnchorPos3DZ","DG.Tweening.DOTweenModuleUI#DOAnchorMax","DG.Tweening.DOTweenModuleUI#DOAnchorMin","DG.Tweening.DOTweenModuleUI#DOPivot","DG.Tweening.DOTweenModuleUI#DOPivotX","DG.Tweening.DOTweenModuleUI#DOPivotY","DG.Tweening.DOTweenModuleUI#DOSizeDelta","DG.Tweening.DOTweenModuleUI#DOPunchAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos","DG.Tweening.DOTweenModuleUI#DOShakeAnchorPos$1","DG.Tweening.DOTweenModuleUI#DOJumpAnchorPos","DG.Tweening.DOTweenModuleUI#DONormalizedPos","DG.Tweening.DOTweenModuleUI#DOHorizontalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOVerticalNormalizedPos","DG.Tweening.DOTweenModuleUI#DOValue","DG.Tweening.DOTweenModuleUI#DOCounter","DG.Tweening.DOTweenModuleUI#DOText","DG.Tweening.DOTweenModuleUI#DOBlendableColor","DG.Tweening.DOTweenModuleUI#DOBlendableColor$1","DG.Tweening.DOTweenModuleUI#DOBlendableColor$2","DG.Tweening.DOTweenModuleUI#DOShapeCircle","DG.Tweening.DOTweenModuleUI.Utils#SwitchToRectTransform","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor","DG.Tweening.DOTweenModuleUnityVersion#DOGradientColor$1","DG.Tweening.DOTweenModuleUnityVersion#WaitForCompletion","DG.Tweening.DOTweenModuleUnityVersion#WaitForRewind","DG.Tweening.DOTweenModuleUnityVersion#WaitForKill","DG.Tweening.DOTweenModuleUnityVersion#WaitForElapsedLoops","DG.Tweening.DOTweenModuleUnityVersion#WaitForPosition","DG.Tweening.DOTweenModuleUnityVersion#WaitForStart","DG.Tweening.DOTweenModuleUnityVersion#DOOffset","DG.Tweening.DOTweenModuleUnityVersion#DOTiling","DG.Tweening.DOTweenModuleUtils#Init","DG.Tweening.DOTweenModuleUtils#Preserver","DG.Tweening.DOTweenModuleUtils.Physics#SetOrientationOnPath","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody2D","DG.Tweening.DOTweenModuleUtils.Physics#HasRigidbody","DG.Tweening.DOTweenModuleUtils.Physics#CreateDOTweenPathTween","DinoCarousel#init","DinoCarousel#Start","DinoCarousel#GetCurrentIndex","DinoCarousel#HideSelectionChrome","DinoCarousel#ChangeToRight","DinoCarousel#ChangeToLeft","DinoCarousel#AnimateTransition","DinoCarousel#PrepareSprite","DinoCarousel#ResetAllSprites","DinoSelectionManager#CurrentObjectSet#get","DinoSelectionManager#Awake","DinoSelectionManager#OnEnable","DinoSelectionManager#OnDisable","DinoSelectionManager#ApplyObjectSetToMap","DinoSelectionManager#ShowRewardCardFinal","DinoSelectionManager#SetRewardCardButtonActive","DinoSelectionManager#FinishPlayable","DinoSelectionManager#ApplyChosenSet","DinoSelectionManager#ChooseDino","DinoSelectionManager#HideChoosingScreen","DinoSelectionManager#ShowNextDino","DinoSelectionManager#ShowPreviousDino","DragManager#ContainsObject","DragManager#Distinct","DragManager#IsDragging#get","DragManager#init","DragManager#Awake","DragManager#Update","DragManager#StartDrag","DragManager#HandleInput","DragManager#TryStartDrag","DragManager#HandleDrag","DragManager#TrackHoveredCell","DragManager#UpdatePotentialMergeGroup","DragManager#StartPullingGroup","DragManager#StopPullingCurrentGroup","DragManager#FindHoveredCell","DragManager#EndDrag","DragManager#GetMergeSubset","DragManager#TryMoveToCell","DragManager#MoveObjectToCell","DragManager#SnapToCell","DragManager#CheckForMerge","DragManager#MergeGroup","DragManager#MergeGroupWithDelay","DragManager#FindMergeGroupVirtual","DragManager#FindMergeGroup","DragManager#ReturnToPreviousCell","DragObject#objectManager#get","DragObject#eggBasket#get","DragObject#indicatorObject#get","DragObject#objectType#get","DragObject#level#get","DragObject#canBeMerged#get","DragObject#canBeMerged#set","DragObject#mergeThreshold#get","DragObject#isMergeOnPlace#get","DragObject#isMergeThisObjectRevealFog#get","DragObject#isAllowedToDrag#get","DragObject#isAllowedToDrag#set","DragObject#currentCell#get","DragObject#currentCell#set","DragObject#init","DragObject#Start","DragObject#Update","DragObject#OnDisable","DragObject#OnDestroy","DragObject#OnDrawGizmos","DragObject#Initialize","DragObject#StartLevitation","DragObject#StartPulling","DragObject#GetSpawnCountForMerge","DragObject#StopPulling","DragObject#FlyTo","DragObject#OnMoved","DragObject#CanMergeWith","DragObject#GetMergedType","DragObject#SetLevel","DragObject#PlaySelectAnimation","DragObject#OnSelectObject","DragObject#DestroyWithAnimation","DragObject#IsNeighborWith","DragObject#GetDistanceTo","DragObject#VacateCurrentCell","DragObject#StopCurrentTween","DragObject#IsSpecialMergeWith","DragObject#DestroyAnimation","EggBasket#init","EggBasket#Start","EggBasket#ActivateBasket","EggBasket#Resolve","EggBasket#InitializeTutorial","EggBasket#DestroyBasket","EggBasket#SpawnEggAt","EggBasket#AnimateMovingToCell","FlyableMergeObject#indicatorObject#get","FlyableMergeObject#objectType#get","FlyableMergeObject#mergeTreshold#get","FlyableMergeObject#level#get","FlyableMergeObject#isAllowedToDrag#get","FlyableMergeObject#isAllowedToDrag#set","FlyableMergeObject#init","FlyableMergeObject#Start","FlyableMergeObject#Update","FlyableMergeObject#OnDestroy","FlyableMergeObject#DestroyWithAnimation","FlyableMergeObject#GetSpawnCountForMerge","FlyableMergeObject#SetLevel","FlyableMergeObject#Initialize","FlyableMergeObject#StartPulling","FlyableMergeObject#StopPulling","FlyableMergeObject#PlaySelectAnimation","FlyableMergeObject#FlyTo","FlyableMergeObject#GetMergedType","FlyableMergeObject#CanMergeWith","FlyableMergeObject#OnSelectObject","FlyableMergeObject#SetPrincessReadyToMerge","FlyableMergeObject#InitializeFromPosition","FlyableMergeObject#MoveToNextPoint","FlyableMergeObject#StopFlying","FlyableMergeObject#ContinueFlying","FlyableMergeObject#DestroyAnimation","FlyableMergeObject#StopCurrentTween","FlyingDragManager#IsDragging#get","FlyingDragManager#init","FlyingDragManager#Awake","FlyingDragManager#Update","FlyingDragManager#StartDrag","FlyingDragManager#HandleInput","FlyingDragManager#TryStartDrag","FlyingDragManager#HandleDrag","FlyingDragManager#TrackHoveredCell","FlyingDragManager#UpdatePotentialMergeGroup","FlyingDragManager#StartPullingGroup","FlyingDragManager#StopPullingCurrentGroup","FlyingDragManager#FindHoveredCell","FlyingDragManager#EndDrag","FlyingDragManager#CheckForMerge","FlyingDragManager#MergeGroup","FlyingDragManager#MergeGroupWithDelay","FlyingObjectsManager#flyableObjects#get","FlyingObjectsManager#init","FlyingObjectsManager#CreateFlyingPrincess","FlyingObjectsManager#AddPrincessToFlyableObjects","FlyingObjectsManager#ActivateAllPrincess","FlyingObjectsManager#InstantiatePrincess","FogManager#init","FogManager#Initialize","FogManager#SpawnMapObjects","FogManager#RevealFog","FogManager#RevealFogAtCell","FogManager#SpawnFogAtCell","FogManager#MoveObjectToCell","FogManager#ClearAllObjects","FogManager#GetObjectAtCell","FogObject#currentCell#get","FogObject#init","FogObject#Awake","FogObject#OnDrawGizmos","FogObject#Initialize","FogObject#MoveToCell","FogObject#VacateCurrentCell","FogObject#Reveal","FogObject#Hide","FogObject#SetInitialState","FogObject#RevealAnimation","FogObject#HideAnimation","FogObject#OnRevealStart","FogObject#OnRevealComplete","FogObject#OnHideStart","FogObject#OnHideComplete","FogObject#GetFogGizmoColor","GridCell#xIndex#get","GridCell#yIndex#get","GridCell#LeftNeighbor#get","GridCell#LeftNeighbor#set","GridCell#RightNeighbor#get","GridCell#RightNeighbor#set","GridCell#TopNeighbor#get","GridCell#TopNeighbor#set","GridCell#BottomNeighbor#get","GridCell#BottomNeighbor#set","GridCell#fogObject#get","GridCell#ObjectInCell#get","GridCell#decorationInCell#get","GridCell#IsOccupied#get","GridCell#isEmpty#get","GridCell#isFogged#get","GridCell#Center#get","GridCell#init","GridCell#OnDestroy","GridCell#OnDrawGizmos","GridCell#Initialize","GridCell#HideCellContents","GridCell#SetFogObject","GridCell#Occupy$2","GridCell#Occupy$1","GridCell#Occupy","GridCell#Vacate","GridCell#SetObjectOnCell","GridCell#InitializeCellComponents","GridCell#OnFogRevealed","GridCell#OnFogHidden","GridCell#ShowCellContents","MainSystem#init","MainSystem#WorldToGridCoordinates","MainSystem#GridToWorldCoordinates","MainSystem#totalCells#get","MainSystem#allCells#get","MainSystem#init","MainSystem#Awake","MainSystem#Start","MainSystem#CreateGridObjects","MainSystem#CreateGrid","MainSystem#GetNeighborCells","MainSystem#GetAllAdjacentCells","MainSystem#GetCellAtPosition","MainSystem#SpawnCell","MainSystem#GetCell","MainSystem#GetNeighbors","MainSystem#GetNearestEmptyCells","MainSystem#InitializeSubsystems","MainSystem#InitializeCellArray","MainSystem#CreateRectangleGrid","MainSystem#CreateCustomShapeGrid","MainSystem#ExpandGridArray","MainSystem#EstablishCellConnections","MainSystem#EstablishCellNeighbors","MapFogLayoutManager#init","MapFogLayoutManager#AddFogToCell","MapFogLayoutManager#RemoveFogFromCell","MapFogLayoutManager#ClearMap","MapFogLayoutManager#GetMapData","MapFogLayoutManager#GetFogCells","MapFogLayoutManager.MapFogLayout#init","MapFogLayoutManager.MapFogLayout#SetCellData","MapFogLayoutManager.MapFogLayout#GetAllFogCells","MapFogLayoutManager.MapFogLayout#Clear","MapObjectLayoutManager#init","MapObjectLayoutManager#AddObjectToCell","MapObjectLayoutManager#RemoveObjectFromCell","MapObjectLayoutManager#ClearMap","MapObjectLayoutManager#GetMapData","MapObjectLayoutManager#GetObjectCells","MapObjectLayoutManager.CellObjectData#init","MapObjectLayoutManager.MapObjectLayout#init","MapObjectLayoutManager.MapObjectLayout#SetCellData","MapObjectLayoutManager.MapObjectLayout#GetCellObjectType","MapObjectLayoutManager.MapObjectLayout#GetAllObjectCells","MapObjectLayoutManager.MapObjectLayout#Clear","ObjectManager#tapTextTutorial#get","ObjectManager#spawnedObjects#get","ObjectManager#spawnedDecorationObjects#get","ObjectManager#init","ObjectManager#Awake","ObjectManager#Initialize","ObjectManager#ClearAllObjects","ObjectManager#GetObjectAtCell","ObjectManager#GetObjectsByType","ObjectManager#SpawnMapObjects","ObjectManager#SpawnStartedObject","ObjectManager#SpawnObject$1","ObjectManager#SpawnObject","PlayableCta#GameStarted","PlayableCta#GameEnded","PlayableCta#OpenStore","PlayableCta#FinishAndOpenStore","PlayNowButton#init","PlayNowButton#OnEnable","PlayNowButton#Start","PlayNowButton#OnDisable","PlayNowButton#OnDestroy","PlayNowButton#GoToStore","PlayNowButton#CreatePulseAnimation","PointsManager#pointsToFlying#get","PointsManager#init","PointsManager#Awake","PointsManager#CreatePoints","TutorialHand#IsSameObject","TutorialHand#Contains","TutorialHand#init","TutorialHand#Awake","TutorialHand#Start","TutorialHand#OnDestroy","TutorialHand#BeginTutorial","TutorialHand#NotifyBasketOpened","TutorialHand#NotifyPlayerInput","TutorialHand#NotifyObjectGrabbed","TutorialHand#ScheduleHint","TutorialHand#StopTutorialHandAnimation","TutorialHand#WaitForInactivity","TutorialHand#ShowNextStep","TutorialHand#GetNextHintDelay","TutorialHand#TryFindHint","TutorialHand#CollectMergeables","TutorialHand#BuildCluster","TutorialHand#IsNeighborOfCluster","TutorialHand#FindFreeNeighborCell","TutorialHand#GetNearest","TutorialHand#FindEggBasket","TutorialHand#IsUsableObject","TutorialHand#IsOnScreen","TutorialHand#PlayTapAnimation","TutorialHand#PlayDragAnimation","TutorialHand#PlayHoldAnimation","TutorialHand#HideHand","TutorialHand#SetHandAlpha","TutorialHand#KillSequence","TutorialHand#StopWaiting","TutorialHandPointer#init","TutorialHandPointer#Start","TutorialHandPointer#StartTutorialPointAnimation","TutorialHandPointer#StopTutorialHandAnimation","TutorialHandPointer#StartDoubleTapLoop","UIExtensions#FadeGroup"]' ) ); }
 /**
- * @version 1.0.9756.23223
+ * @version 1.0.9756.24267
  * @copyright anton
  * @compiler Bridge.NET 17.9.42-luna
  */
@@ -3853,6 +3853,7 @@ if ( TRACE ) { TRACE( "DinoCarousel#ResetAllSprites", this ); }
             m_dinoObjectSets: null,
             m_rewardCard: null,
             m_rewardCardImage: null,
+            m_rewardCardButton: null,
             m_carouselGroup: null,
             m_currentObjectSet: null
         },
@@ -3875,6 +3876,8 @@ if ( TRACE ) { TRACE( "DinoSelectionManager#Awake", this ); }
                 } else {
                     UnityEngine.MonoBehaviour.Destroy(this.gameObject);
                 }
+
+                this.SetRewardCardButtonActive(false);
             },
             /*DinoSelectionManager.Awake end.*/
 
@@ -3885,6 +3888,7 @@ if ( TRACE ) { TRACE( "DinoSelectionManager#OnEnable", this ); }
                 this.m_nextDinoButton.onClick.AddListener(Bridge.fn.cacheBind(this, this.ShowNextDino));
                 this.m_previousDinoButton.onClick.AddListener(Bridge.fn.cacheBind(this, this.ShowPreviousDino));
                 this.m_chooseDinoButton.onClick.AddListener(Bridge.fn.cacheBind(this, this.ChooseDino));
+                this.m_rewardCardButton.onClick.AddListener(Bridge.fn.cacheBind(this, this.FinishPlayable));
             },
             /*DinoSelectionManager.OnEnable end.*/
 
@@ -3895,6 +3899,7 @@ if ( TRACE ) { TRACE( "DinoSelectionManager#OnDisable", this ); }
                 this.m_nextDinoButton.onClick.RemoveAllListeners();
                 this.m_previousDinoButton.onClick.RemoveAllListeners();
                 this.m_chooseDinoButton.onClick.RemoveAllListeners();
+                this.m_rewardCardButton.onClick.RemoveAllListeners();
             },
             /*DinoSelectionManager.OnDisable end.*/
 
@@ -3983,7 +3988,9 @@ if ( TRACE ) { TRACE( "DinoSelectionManager#ShowRewardCardFinal", this ); }
                                 }
                                 case 3: {
                                     $task3.getAwaitedResult();
-                                    PlayableCta.FinishAndOpenStore();
+                                    PlayableCta.GameEnded();
+
+                                    this.SetRewardCardButtonActive(true);
                                     return;
                                 }
                                 default: {
@@ -3996,6 +4003,39 @@ if ( TRACE ) { TRACE( "DinoSelectionManager#ShowRewardCardFinal", this ); }
                 $asyncBody();
             },
             /*DinoSelectionManager.ShowRewardCardFinal end.*/
+
+            /*DinoSelectionManager.SetRewardCardButtonActive start.*/
+            SetRewardCardButtonActive: function (a_isActive) {
+if ( TRACE ) { TRACE( "DinoSelectionManager#SetRewardCardButtonActive", this ); }
+
+                var $t;
+                this.m_rewardCardButton.interactable = a_isActive;
+
+                $t = Bridge.getEnumerator(this.m_rewardCardButton.GetComponentsInChildren$1(UnityEngine.UI.Graphic, true));
+                try {
+                    while ($t.moveNext()) {
+                        var graphic = $t.Current;
+                        graphic.raycastTarget = a_isActive;
+                    }
+                } finally {
+                    if (Bridge.is($t, System.IDisposable)) {
+                        $t.System$IDisposable$Dispose();
+                    }
+                }
+            },
+            /*DinoSelectionManager.SetRewardCardButtonActive end.*/
+
+            /*DinoSelectionManager.FinishPlayable start.*/
+            FinishPlayable: function () {
+if ( TRACE ) { TRACE( "DinoSelectionManager#FinishPlayable", this ); }
+
+                this.m_rewardCardButton.onClick.RemoveAllListeners();
+
+                AudioSystem.Instance.PlayClickSound();
+
+                PlayableCta.FinishAndOpenStore();
+            },
+            /*DinoSelectionManager.FinishPlayable end.*/
 
             /*DinoSelectionManager.ApplyChosenSet start.*/
             ApplyChosenSet: function (a_selectedSet) {
@@ -4114,6 +4154,8 @@ if ( TRACE ) { TRACE( "DinoSelectionManager#HideChoosingScreen", this ); }
                                     this.m_carouselGroup.SetActive(false);
 
                                     this.m_chooseDinoButton.gameObject.SetActive(false);
+
+                                    TutorialHand.Instance.BeginTutorial();
                                     return;
                                 }
                                 default: {
@@ -4196,7 +4238,6 @@ if ( TRACE ) { TRACE( "DragManager#Distinct", this ); }
             m_pointsManager: null,
             m_mergeEffectParticleSystem: null,
             m_objectManager: null,
-            m_tutorialHand: null,
             m_flyingObjectsManager: null,
             m_fogManager: null,
             m_mergeText: null,
@@ -4309,7 +4350,7 @@ if ( TRACE ) { TRACE( "DragManager#HandleInput", this ); }
             TryStartDrag: function (a_touchPosition) {
 if ( TRACE ) { TRACE( "DragManager#TryStartDrag", this ); }
 
-                TutorialHand.Instance.StopCoroutine$3();
+                TutorialHand.Instance.NotifyPlayerInput();
 
                 if (this.m_isDragging) {
                     return;
@@ -4327,6 +4368,7 @@ if ( TRACE ) { TRACE( "DragManager#TryStartDrag", this ); }
                         !Bridge.staticEquals(dragObject.e_onObjectSelected, null) ? dragObject.e_onObjectSelected(dragObject) : null;
                         dragObject.PlaySelectAnimation();
                         dragObject.OnSelectObject();
+                        TutorialHand.Instance.NotifyObjectGrabbed(dragObject);
                     } else if (UnityEngine.MonoBehaviour.op_Inequality(dragObject, null) && !dragObject.isAllowedToDrag) {
                         if (Bridge.referenceEquals(dragObject.objectType, "eggbasket") && UnityEngine.MonoBehaviour.op_Inequality(dragObject.eggBasket, null)) {
                             dragObject.eggBasket.ActivateBasket();
@@ -4542,10 +4584,6 @@ if ( TRACE ) { TRACE( "DragManager#FindHoveredCell", this ); }
             EndDrag: function () {
 if ( TRACE ) { TRACE( "DragManager#EndDrag", this ); }
 
-                if (this.m_objectManager.spawnedObjects.Count >= 2) {
-                    TutorialHand.Instance.ActivateTutorialAfterPlayerInactivity();
-                }
-
                 if (!this.m_isDragging || UnityEngine.MonoBehaviour.op_Equality(this.m_currentDraggedObject, null)) {
                     return;
                 }
@@ -4571,6 +4609,8 @@ if ( TRACE ) { TRACE( "DragManager#EndDrag", this ); }
                 this.m_currentDraggedObject = null;
                 this.m_isDragging = false;
                 this.m_lastHoveredCell = null;
+                TutorialHand.Instance.ScheduleHint();
+
                 UnityEngine.Debug.Log$1("Drag ended");
             },
             /*DragManager.EndDrag end.*/
@@ -4847,7 +4887,6 @@ if ( TRACE ) { TRACE( "DragManager#MergeGroupWithDelay", this ); }
                                         }
 
                                         if (Bridge.referenceEquals(a_subset.getItem(0).objectType, "key")) {
-                                            this.m_tutorialHand.StopTutorialHandAnimation();
                                             this.m_mergeText.SetActive(true);
                                         }
 
@@ -4881,7 +4920,7 @@ if ( TRACE ) { TRACE( "DragManager#MergeGroupWithDelay", this ); }
                                         }
 
                                         if (this.m_objectManager.spawnedObjects.Count >= 2) {
-                                            TutorialHand.Instance.ActivateTutorialAfterPlayerInactivity();
+                                            TutorialHand.Instance.ScheduleHint();
                                         }
 
                                         if (UnityEngine.MonoBehaviour.op_Inequality(flyableMergeNew, null) && !pc.Vec3.equals( chestPosition, pc.Vec3.ZERO.clone() )) {
@@ -5596,7 +5635,7 @@ if ( TRACE ) { TRACE( "EggBasket#ActivateBasket", this ); }
 
                 var $t;
                 AudioSystem.Instance.PlayOpenEggBasketSound();
-                TutorialHand.Instance.StopTutorialHandAnimation();
+                TutorialHand.Instance.NotifyBasketOpened();
 
                 $t = Bridge.getEnumerator(this.m_spawnPositions);
                 try {
@@ -6594,9 +6633,6 @@ if ( TRACE ) { TRACE( "FlyingDragManager#MergeGroupWithDelay", this ); }
                                         spawnPosition = this.m_currentDraggedObject.transform.position.$clone();
                                         this.m_currentDraggedObject.DestroyWithAnimation();
                                         this.m_currentDraggedObject = null;
-
-                                        /* if (a_subset[0].objectType == "key")
-                                           m_tutorialHand.StopTutorialHandAnimation();*/
 
                                         $enumerator.current = new UnityEngine.WaitForSeconds(0.4);
                                         $step = 1;
@@ -8466,9 +8502,6 @@ if ( TRACE ) { TRACE( "ObjectManager#SpawnMapObjects", this ); }
                     }
                 }
 
-                // Первый этап туториала
-                TutorialHand.Instance.ShowTapTutorialStep(this.spawnedObjects.getItem(0).transform.position);
-
                 UnityEngine.Debug.Log$1(System.String.format("Spawned {0} objects from map layout", [Bridge.box(this.m_spawnedObjects.Count, System.Int32)]));
             },
             /*ObjectManager.SpawnMapObjects end.*/
@@ -8835,50 +8868,67 @@ if ( TRACE ) { TRACE( "PointsManager#CreatePoints", this ); }
         statics: {
             fields: {
                 Instance: null
+            },
+            methods: {
+                /*TutorialHand.IsSameObject:static start.*/
+                IsSameObject: function (a_first, a_second) {
+if ( TRACE ) { TRACE( "TutorialHand#IsSameObject", this ); }
+
+                    return Bridge.referenceEquals(a_first, a_second);
+                },
+                /*TutorialHand.IsSameObject:static end.*/
+
+                /*TutorialHand.Contains:static start.*/
+                Contains: function (a_list, a_item) {
+if ( TRACE ) { TRACE( "TutorialHand#Contains", this ); }
+
+                    for (var i = 0; i < a_list.Count; i = (i + 1) | 0) {
+                        if (Bridge.referenceEquals(a_list.getItem(i), a_item)) {
+                            return true;
+                        }
+                    }
+
+                    return false;
+                },
+                /*TutorialHand.Contains:static end.*/
+
+
             }
         },
         fields: {
             m_spriteRenderer: null,
             m_objectManager: null,
+            m_firstHintDelay: 0,
             m_playerInactivityForTutorial: 0,
-            m_startAnimationPosition: null,
-            m_endAnimationPosition: null,
-            m_startedColor: null,
-            m_alphaColor: null,
+            m_escalatedInactivity: 0,
+            m_dragDuration: 0,
+            m_screenMargin: 0,
+            m_state: 0,
+            m_isStarted: false,
+            m_hintSource: null,
+            m_hintStartPosition: null,
+            m_hintTargetPosition: null,
+            m_hintsShown: 0,
+            m_waitElapsed: 0,
+            m_waitRoutine: null,
             m_handSequence: null,
-            m_startedObject: null,
-            m_endObject: null,
-            m_isFirstTutorialStepStarted: false,
-            m_isSecondTutorialStepStarted: false,
-            m_isThirdTutorialStepStarted: false,
-            m_inactivityTime: 0,
-            m_playerActive: false,
-            m_tutorialCoroutine: null
-        },
-        props: {
-            tutorialCoroutine: {
-                get: function () {
-if ( TRACE ) { TRACE( "TutorialHand#tutorialCoroutine#get", this ); }
-
-                    return this.m_tutorialCoroutine;
-                },
-                set: function (value) {
-if ( TRACE ) { TRACE( "TutorialHand#tutorialCoroutine#set", this ); }
-
-                    this.m_tutorialCoroutine = value;
-                }
-            }
+            m_mergeables: null,
+            m_cluster: null
         },
         ctors: {
             init: function () {
 if ( TRACE ) { TRACE( "TutorialHand#init", this ); }
 
-                this.m_startAnimationPosition = new UnityEngine.Vector3();
-                this.m_endAnimationPosition = new UnityEngine.Vector3();
-                this.m_startedColor = new UnityEngine.Color();
-                this.m_alphaColor = new UnityEngine.Color();
+                this.m_hintStartPosition = new UnityEngine.Vector3();
+                this.m_hintTargetPosition = new UnityEngine.Vector3();
+                this.m_firstHintDelay = 1.5;
                 this.m_playerInactivityForTutorial = 4.0;
-                this.m_playerActive = false;
+                this.m_escalatedInactivity = 2.0;
+                this.m_dragDuration = 0.8;
+                this.m_screenMargin = 0.08;
+                this.m_state = TutorialHand.TutorialState.Inactive;
+                this.m_mergeables = new (System.Collections.Generic.List$1(DragObject)).ctor();
+                this.m_cluster = new (System.Collections.Generic.List$1(DragObject)).ctor();
             }
         },
         methods: {
@@ -8894,375 +8944,104 @@ if ( TRACE ) { TRACE( "TutorialHand#Awake", this ); }
             },
             /*TutorialHand.Awake end.*/
 
+            /*TutorialHand.Start start.*/
+            Start: function () {
+if ( TRACE ) { TRACE( "TutorialHand#Start", this ); }
+
+                this.SetHandAlpha(0.0);
+            },
+            /*TutorialHand.Start end.*/
+
             /*TutorialHand.OnDestroy start.*/
             OnDestroy: function () {
 if ( TRACE ) { TRACE( "TutorialHand#OnDestroy", this ); }
 
-                var $t;
-                $t = Bridge.getEnumerator(this.m_objectManager.spawnedObjects);
-                try {
-                    while ($t.moveNext()) {
-                        var dragObject = $t.Current;
-                        dragObject.e_onObjectSelected = Bridge.fn.remove(dragObject.e_onObjectSelected, Bridge.fn.cacheBind(this, this.OnObjectSelectedToMerge));
-                        dragObject.e_onObjectSelected = Bridge.fn.remove(dragObject.e_onObjectSelected, Bridge.fn.cacheBind(this, this.OnObjectSelected));
-                        dragObject.e_onObjectMoved = Bridge.fn.remove(dragObject.e_onObjectMoved, Bridge.fn.cacheBind(this, this.OnObjectMoved));
-                    }
-                } finally {
-                    if (Bridge.is($t, System.IDisposable)) {
-                        $t.System$IDisposable$Dispose();
-                    }
-                }
+                this.KillSequence();
+                this.StopWaiting();
             },
             /*TutorialHand.OnDestroy end.*/
 
-            /*TutorialHand.StopCoroutine$3 start.*/
-            StopCoroutine$3: function () {
-if ( TRACE ) { TRACE( "TutorialHand#StopCoroutine$3", this ); }
+            /*TutorialHand.BeginTutorial start.*/
+            BeginTutorial: function () {
+if ( TRACE ) { TRACE( "TutorialHand#BeginTutorial", this ); }
 
-                this.OnPlayerAction();
-
-                if (this.m_tutorialCoroutine != null) {
-                    this.StopCoroutine$2(this.tutorialCoroutine);
-                    this.m_tutorialCoroutine = null;
-                }
-            },
-            /*TutorialHand.StopCoroutine$3 end.*/
-
-            /*TutorialHand.SetStartColor start.*/
-            SetStartColor: function () {
-if ( TRACE ) { TRACE( "TutorialHand#SetStartColor", this ); }
-
-                this.m_startedColor = new pc.Color( 1, 1, 1, 1 );
-                this.m_alphaColor = new pc.Color( this.m_startedColor.r, this.m_startedColor.g, this.m_startedColor.b, 0.0 );
-            },
-            /*TutorialHand.SetStartColor end.*/
-
-            /*TutorialHand.ShowTapTutorialStep start.*/
-            ShowTapTutorialStep: function (a_pointPosition) {
-if ( TRACE ) { TRACE( "TutorialHand#ShowTapTutorialStep", this ); }
-
-                this.SetStartColor();
-                this.StartTutorialPointAnimation(a_pointPosition);
-            },
-            /*TutorialHand.ShowTapTutorialStep end.*/
-
-            /*TutorialHand.ShowMovingTutorialStep start.*/
-            ShowMovingTutorialStep: function (a_startedObject, a_mergableObject, a_needToMerge) {
-if ( TRACE ) { TRACE( "TutorialHand#ShowMovingTutorialStep", this ); }
-
-                if (a_needToMerge === void 0) { a_needToMerge = false; }
-                this.SetStartColor();
-                this.StartTutoriaMovingAnimation(a_startedObject, a_mergableObject, a_needToMerge);
-            },
-            /*TutorialHand.ShowMovingTutorialStep end.*/
-
-            /*TutorialHand.StartTutoriaMovingAnimation start.*/
-            StartTutoriaMovingAnimation: function (a_startedObject, a_mergeableObject, a_needToMerge) {
-if ( TRACE ) { TRACE( "TutorialHand#StartTutoriaMovingAnimation", this ); }
-
-                this.m_startAnimationPosition = a_startedObject.currentCell.transform.position.$clone();
-
-                if (UnityEngine.MonoBehaviour.op_Equality(a_mergeableObject, null)) {
+                if (this.m_isStarted) {
                     return;
                 }
 
-                var cell = a_mergeableObject.currentCell;
+                this.m_isStarted = true;
 
-                if (a_needToMerge) {
-                    this.m_endAnimationPosition = cell.transform.position.$clone();
-                } else {
-                    var neighbors = System.Array.init([cell.RightNeighbor, cell.LeftNeighbor, cell.TopNeighbor, cell.BottomNeighbor], GridCell);
-
-                    var freeNeighbor = System.Linq.Enumerable.from(neighbors, GridCell).firstOrDefault(Bridge.fn.bind(this, function (n) {
-                            return UnityEngine.MonoBehaviour.op_Inequality(n, null) && !n.IsOccupied;
-                        }), null);
-
-                    if (UnityEngine.MonoBehaviour.op_Equality(freeNeighbor, null)) {
-                        return;
-                    }
-
-                    this.m_endAnimationPosition = freeNeighbor.transform.position.$clone();
+                if (UnityEngine.MonoBehaviour.op_Inequality(this.FindEggBasket(), null)) {
+                    this.ShowNextStep();
+                    return;
                 }
 
-                this.m_startedObject = a_startedObject;
-                this.m_endObject = a_mergeableObject;
-
-                this.transform.position = this.m_startAnimationPosition.$clone();
-                this.transform.gameObject.SetActive(true);
-
-                if (a_needToMerge) {
-                    a_startedObject.e_onObjectSelected = Bridge.fn.combine(a_startedObject.e_onObjectSelected, Bridge.fn.cacheBind(this, this.OnObjectSelectedToMerge));
-                } else {
-                    a_startedObject.e_onObjectSelected = Bridge.fn.combine(a_startedObject.e_onObjectSelected, Bridge.fn.cacheBind(this, this.OnObjectSelected));
-                }
-
-                this.StartTutorialMoveHandAnimation();
+                this.ScheduleHint();
             },
-            /*TutorialHand.StartTutoriaMovingAnimation end.*/
+            /*TutorialHand.BeginTutorial end.*/
 
-            /*TutorialHand.StartTutorialPointAnimation start.*/
-            StartTutorialPointAnimation: function (a_pointToShow) {
-if ( TRACE ) { TRACE( "TutorialHand#StartTutorialPointAnimation", this ); }
+            /*TutorialHand.NotifyBasketOpened start.*/
+            NotifyBasketOpened: function () {
+if ( TRACE ) { TRACE( "TutorialHand#NotifyBasketOpened", this ); }
 
-                var $t;
-                this.m_startAnimationPosition = a_pointToShow.$clone();
+                this.ScheduleHint();
+            },
+            /*TutorialHand.NotifyBasketOpened end.*/
 
-                this.transform.position = this.m_startAnimationPosition.$clone();
-                this.transform.gameObject.SetActive(true);
+            /*TutorialHand.NotifyPlayerInput start.*/
+            NotifyPlayerInput: function () {
+if ( TRACE ) { TRACE( "TutorialHand#NotifyPlayerInput", this ); }
 
-                $t = Bridge.getEnumerator(this.m_objectManager.spawnedObjects);
-                try {
-                    while ($t.moveNext()) {
-                        var dragObject = $t.Current;
-                        dragObject.e_onObjectMoved = Bridge.fn.combine(dragObject.e_onObjectMoved, Bridge.fn.cacheBind(this, this.OnObjectMoved));
-                    }
-                } finally {
-                    if (Bridge.is($t, System.IDisposable)) {
-                        $t.System$IDisposable$Dispose();
-                    }
+                this.m_waitElapsed = 0.0;
+            },
+            /*TutorialHand.NotifyPlayerInput end.*/
+
+            /*TutorialHand.NotifyObjectGrabbed start.*/
+            NotifyObjectGrabbed: function (a_grabbedObject) {
+if ( TRACE ) { TRACE( "TutorialHand#NotifyObjectGrabbed", this ); }
+
+                this.m_waitElapsed = 0.0;
+
+                if (this.m_state === TutorialHand.TutorialState.Hinting && TutorialHand.IsSameObject(a_grabbedObject, this.m_hintSource)) {
+                    this.m_state = TutorialHand.TutorialState.Holding;
+                    this.PlayHoldAnimation(this.m_hintTargetPosition);
+                    return;
                 }
 
-                this.StartTutorialTapHandAnimation();
+                this.HideHand();
+
+                this.m_state = TutorialHand.TutorialState.Waiting;
             },
-            /*TutorialHand.StartTutorialPointAnimation end.*/
+            /*TutorialHand.NotifyObjectGrabbed end.*/
+
+            /*TutorialHand.ScheduleHint start.*/
+            ScheduleHint: function () {
+if ( TRACE ) { TRACE( "TutorialHand#ScheduleHint", this ); }
+
+                this.HideHand();
+
+                this.m_state = TutorialHand.TutorialState.Waiting;
+
+                this.StopWaiting();
+
+                this.m_waitRoutine = this.StartCoroutine$1(this.WaitForInactivity(this.GetNextHintDelay()));
+            },
+            /*TutorialHand.ScheduleHint end.*/
 
             /*TutorialHand.StopTutorialHandAnimation start.*/
             StopTutorialHandAnimation: function () {
 if ( TRACE ) { TRACE( "TutorialHand#StopTutorialHandAnimation", this ); }
 
-                if (this.m_handSequence != null) {
-                    DG.Tweening.TweenExtensions.Kill(this.m_handSequence);
-                    this.m_handSequence = null;
-                }
+                this.HideHand();
+                this.StopWaiting();
 
-                DG.Tweening.DOTweenModuleSprite.DOFade(this.m_spriteRenderer, 0.0, 0.3);
+                this.m_state = TutorialHand.TutorialState.Inactive;
             },
             /*TutorialHand.StopTutorialHandAnimation end.*/
 
-            /*TutorialHand.ActivateTutorialAfterPlayerInactivity start.*/
-            ActivateTutorialAfterPlayerInactivity: function () {
-if ( TRACE ) { TRACE( "TutorialHand#ActivateTutorialAfterPlayerInactivity", this ); }
-
-                var $step = 0,
-                    $task1, 
-                    $jumpFromFinally, 
-                    mergeCandidate, 
-                    groupsCandidates, 
-                    $t, 
-                    obj, 
-                    key, 
-                    $t1, 
-                    group, 
-                    isMergeNeeded, 
-                    groups, 
-                    $t2, 
-                    obj1, 
-                    key1, 
-                    $t3, 
-                    group1, 
-                    isolatedCandidates, 
-                    $t4, 
-                    obj2, 
-                    hasNeighbor, 
-                    $t5, 
-                    other, 
-                    exampleObject, 
-                    $asyncBody = Bridge.fn.bind(this, function () {
-                        for (;;) {
-                            $step = System.Array.min([0,1], $step);
-                            switch ($step) {
-                                case 0: {
-                                    $task1 = System.Threading.Tasks.Task.delay(1000);
-                                    $step = 1;
-                                    if ($task1.isCompleted()) {
-                                        continue;
-                                    }
-                                    $task1.continue($asyncBody);
-                                    return;
-                                }
-                                case 1: {
-                                    $task1.getAwaitedResult();
-                                    if (this.m_tutorialCoroutine != null) {
-                                        return;
-                                    }
-
-                                    mergeCandidate = new (System.Collections.Generic.List$1(DragObject)).ctor();
-
-                                    groupsCandidates = new (System.Collections.Generic.Dictionary$2(System.ValueTuple$2(System.String,System.Int32),System.Collections.Generic.List$1(DragObject))).ctor();
-
-                                    $t = Bridge.getEnumerator(this.m_objectManager.spawnedObjects);
-                                    try {
-                                        while ($t.moveNext()) {
-                                            obj = $t.Current;
-                                            if (!obj.canBeMerged) {
-                                                continue;
-                                            }
-
-                                            key = new (System.ValueTuple$2(System.String,System.Int32)).$ctor1(obj.objectType, obj.level);
-
-                                            if (!groupsCandidates.containsKey(key.$clone())) {
-                                                groupsCandidates.setItem(key, new (System.Collections.Generic.List$1(DragObject)).ctor());
-                                            }
-
-                                            groupsCandidates.getItem(key).add(obj);
-                                        }
-                                    } finally {
-                                        if (Bridge.is($t, System.IDisposable)) {
-                                            $t.System$IDisposable$Dispose();
-                                        }
-                                    }
-
-                                    // теперь ищем первую группу, где 2 и более объектов
-                                    $t1 = Bridge.getEnumerator(groupsCandidates.Values);
-                                    try {
-                                        while ($t1.moveNext()) {
-                                            group = $t1.Current;
-                                            if (group.Count >= 2) {
-                                                mergeCandidate = group;
-                                                break;
-                                            }
-                                        }
-                                    } finally {
-                                        if (Bridge.is($t1, System.IDisposable)) {
-                                            $t1.System$IDisposable$Dispose();
-                                        }
-                                    } // выбираем первую подходящую группу
-
-                                    UnityEngine.Debug.Log$1("After Merge Candidate");
-
-                                    if (mergeCandidate == null) {
-                                        UnityEngine.Debug.Log$1("MergeCandidate == null");
-                                        return;
-                                    } else {
-                                        UnityEngine.Debug.Log$1("MergeCandidate != null");
-                                    }
-
-                                    isMergeNeeded = false;
-
-                                    groups = new (System.Collections.Generic.Dictionary$2(System.ValueTuple$2(System.String,System.Int32),System.Collections.Generic.List$1(DragObject))).ctor();
-
-                                    $t2 = Bridge.getEnumerator(mergeCandidate);
-                                    try {
-                                        while ($t2.moveNext()) {
-                                            obj1 = $t2.Current;
-                                            if (!obj1.canBeMerged) {
-                                                continue;
-                                            }
-
-                                            key1 = new (System.ValueTuple$2(System.String,System.Int32)).$ctor1(obj1.objectType, obj1.level);
-
-                                            if (!groups.containsKey(key1.$clone())) {
-                                                groups.setItem(key1, new (System.Collections.Generic.List$1(DragObject)).ctor());
-                                            }
-
-                                            groups.getItem(key1).add(obj1);
-                                        }
-                                    } finally {
-                                        if (Bridge.is($t2, System.IDisposable)) {
-                                            $t2.System$IDisposable$Dispose();
-                                        }
-                                    }
-
-                                    // Проверяем каждую группу
-                                    $t3 = Bridge.getEnumerator(groups.Values);
-                                    try {
-                                        while ($t3.moveNext()) {
-                                            group1 = $t3.Current;
-                                            if (group1.Count < group1.getItem(0).mergeThreshold) {
-                                                continue;
-                                            }
-
-                                            // Проверяем все пары объектов внутри группы
-                                            for (var i = 0; i < group1.Count; i = (i + 1) | 0) {
-                                                for (var j = (i + 1) | 0; j < group1.Count; j = (j + 1) | 0) {
-                                                    if (group1.getItem(i).IsNeighborWith(group1.getItem(j))) {
-                                                        isMergeNeeded = true;
-                                                        break;
-                                                    }
-                                                }
-
-                                                if (isMergeNeeded) {
-                                                    break;
-                                                }
-                                            }
-
-                                            if (isMergeNeeded) {
-                                                break;
-                                            }
-                                        }
-                                    } finally {
-                                        if (Bridge.is($t3, System.IDisposable)) {
-                                            $t3.System$IDisposable$Dispose();
-                                        }
-                                    }
-
-                                    UnityEngine.Debug.Log$1("After bool IsNeeded");
-
-                                    // если нашли подходящие объекты — берём первый для примера
-                                    isolatedCandidates = new (System.Collections.Generic.List$1(DragObject)).ctor();
-
-                                    $t4 = Bridge.getEnumerator(mergeCandidate);
-                                    try {
-                                        while ($t4.moveNext()) {
-                                            obj2 = $t4.Current;
-                                            hasNeighbor = false;
-
-                                            $t5 = Bridge.getEnumerator(mergeCandidate);
-                                            try {
-                                                while ($t5.moveNext()) {
-                                                    other = $t5.Current;
-                                                    if (UnityEngine.MonoBehaviour.op_Equality(other, obj2)) {
-                                                        continue;
-                                                    }
-
-                                                    if (Bridge.referenceEquals(obj2.objectType, other.objectType) && obj2.level === other.level && obj2.IsNeighborWith(other)) {
-                                                        hasNeighbor = true;
-                                                        break;
-                                                    }
-                                                }
-                                            } finally {
-                                                if (Bridge.is($t5, System.IDisposable)) {
-                                                    $t5.System$IDisposable$Dispose();
-                                                }
-                                            }
-
-                                            if (!hasNeighbor) {
-                                                isolatedCandidates.add(obj2);
-                                            }
-                                        }
-                                    } finally {
-                                        if (Bridge.is($t4, System.IDisposable)) {
-                                            $t4.System$IDisposable$Dispose();
-                                        }
-                                    }
-
-                                    UnityEngine.Debug.Log$1("After Isolated Candidates");
-
-                                    // если таких нет — fallback: берём любой
-                                    exampleObject = System.Linq.Enumerable.from(isolatedCandidates, DragObject).firstOrDefault(null, null) || System.Linq.Enumerable.from(mergeCandidate, DragObject).firstOrDefault(null, null);
-
-                                    UnityEngine.Debug.Log$1("After exampleObject");
-
-                                    if (UnityEngine.MonoBehaviour.op_Inequality(exampleObject, null)) {
-                                        UnityEngine.Debug.Log$1("ExampleObject is not null");
-                                        this.m_tutorialCoroutine = this.StartCoroutine$1(this.TutorialAfterInactivity(exampleObject, isMergeNeeded));
-                                    }
-                                    return;
-                                }
-                                default: {
-                                    return;
-                                }
-                            }
-                        }
-                    }, arguments);
-
-                $asyncBody();
-            },
-            /*TutorialHand.ActivateTutorialAfterPlayerInactivity end.*/
-
-            /*TutorialHand.TutorialAfterInactivity start.*/
-            TutorialAfterInactivity: function (a_dragObject, a_needToMerge) {
-if ( TRACE ) { TRACE( "TutorialHand#TutorialAfterInactivity", this ); }
+            /*TutorialHand.WaitForInactivity start.*/
+            WaitForInactivity: function (a_delay) {
+if ( TRACE ) { TRACE( "TutorialHand#WaitForInactivity", this ); }
 
                 var $step = 0,
                     $jumpFromFinally,
@@ -9274,65 +9053,33 @@ if ( TRACE ) { TRACE( "TutorialHand#TutorialAfterInactivity", this ); }
                         for (;;) {
                             switch ($step) {
                                 case 0: {
-                                    UnityEngine.Debug.Log$1("Inside Coroutine");
-
-                                        if (UnityEngine.MonoBehaviour.op_Equality(a_dragObject, null)) {
-                                            $step = 1;
-                                            continue;
-                                        } 
-                                        $step = 2;
-                                        continue;
-                                }
-                                case 1: {
-                                    return false;
-                                }
-                                case 2: {
-                                    this.m_inactivityTime = 0.0;
-                                        this.m_playerActive = false;
-                                    $step = 3;
+                                    this.m_waitElapsed = 0.0;
+                                    $step = 1;
                                     continue;
                                 }
-                                case 3: {
-                                    if ( this.m_inactivityTime < this.m_playerInactivityForTutorial ) {
-                                            $step = 4;
+                                case 1: {
+                                    if ( this.m_waitElapsed < a_delay ) {
+                                            $step = 2;
                                             continue;
                                         } 
-                                        $step = 8;
+                                        $step = 4;
+                                        continue;
+                                }
+                                case 2: {
+                                    this.m_waitElapsed += UnityEngine.Time.deltaTime;
+                                        $enumerator.current = null;
+                                        $step = 3;
+                                        return true;
+                                }
+                                case 3: {
+                                    
+                                        $step = 1;
                                         continue;
                                 }
                                 case 4: {
-                                    if (this.m_playerActive) {
-                                            $step = 5;
-                                            continue;
-                                        } 
-                                        $step = 6;
-                                        continue;
-                                }
-                                case 5: {
-                                    return false;
-                                }
-                                case 6: {
-                                    // игрок проявил активность — отменяем запуск туториала
+                                    this.m_waitRoutine = null;
 
-                                        this.m_inactivityTime += UnityEngine.Time.deltaTime;
-                                        $enumerator.current = null;
-                                        $step = 7;
-                                        return true;
-                                }
-                                case 7: {
-                                    
-                                        $step = 3;
-                                        continue;
-                                }
-                                case 8: {
-                                    // если прошло 4 секунды и игрок не активен
-                                        if (!this.m_playerActive) {
-                                            this.ShowMovingTutorialStep(a_dragObject, System.Linq.Enumerable.from(this.m_objectManager.spawnedObjects, DragObject).firstOrDefault(Bridge.fn.bind(this, function (x) {
-                                                    return Bridge.referenceEquals(x.objectType, a_dragObject.objectType) && UnityEngine.MonoBehaviour.op_Inequality(x, a_dragObject) && x.canBeMerged;
-                                                }), null), a_needToMerge);
-                                        }
-
-                                        this.m_tutorialCoroutine = null;
+                                        this.ShowNextStep();
 
                                 }
                                 default: {
@@ -9347,119 +9094,457 @@ if ( TRACE ) { TRACE( "TutorialHand#TutorialAfterInactivity", this ); }
                 }));
                 return $enumerator;
             },
-            /*TutorialHand.TutorialAfterInactivity end.*/
+            /*TutorialHand.WaitForInactivity end.*/
 
-            /*TutorialHand.OnPlayerAction start.*/
-            OnPlayerAction: function () {
-if ( TRACE ) { TRACE( "TutorialHand#OnPlayerAction", this ); }
+            /*TutorialHand.ShowNextStep start.*/
+            ShowNextStep: function () {
+if ( TRACE ) { TRACE( "TutorialHand#ShowNextStep", this ); }
 
-                this.m_playerActive = true;
-            },
-            /*TutorialHand.OnPlayerAction end.*/
+                var basket = this.FindEggBasket();
 
-            /*TutorialHand.OnObjectSelected start.*/
-            OnObjectSelected: function (a_dragObject) {
-if ( TRACE ) { TRACE( "TutorialHand#OnObjectSelected", this ); }
-
-                var cell = (UnityEngine.MonoBehaviour.op_Equality(a_dragObject, this.m_endObject)) ? this.m_startedObject.currentCell : this.m_endObject.currentCell;
-
-                var neighbors = System.Array.init([cell.RightNeighbor, cell.LeftNeighbor, cell.TopNeighbor, cell.BottomNeighbor], GridCell);
-
-                var freeNeighbor = System.Linq.Enumerable.from(neighbors, GridCell).firstOrDefault(Bridge.fn.bind(this, function (n) {
-                        return UnityEngine.MonoBehaviour.op_Inequality(n, null) && !n.IsOccupied;
-                    }), null);
-
-                if (UnityEngine.MonoBehaviour.op_Equality(freeNeighbor, null)) {
+                if (UnityEngine.MonoBehaviour.op_Inequality(basket, null)) {
+                    this.m_state = TutorialHand.TutorialState.PointingBasket;
+                    this.PlayTapAnimation(basket.transform.position);
                     return;
                 }
 
-                this.StartTutorialPointAnimation(freeNeighbor.transform.position);
-
-                this.m_startedObject.e_onObjectSelected = Bridge.fn.remove(this.m_startedObject.e_onObjectSelected, Bridge.fn.cacheBind(this, this.OnObjectSelected));
-            },
-            /*TutorialHand.OnObjectSelected end.*/
-
-            /*TutorialHand.OnObjectSelectedToMerge start.*/
-            OnObjectSelectedToMerge: function (a_dragObject) {
-if ( TRACE ) { TRACE( "TutorialHand#OnObjectSelectedToMerge", this ); }
-
-                if (UnityEngine.MonoBehaviour.op_Equality(a_dragObject, this.m_endObject)) {
-                    this.StartTutorialPointAnimation(this.m_startedObject.transform.position);
-                } else {
-                    this.StartTutorialPointAnimation(this.m_endObject.transform.position);
+                if (!this.TryFindHint()) {
+                    this.ScheduleHint();
+                    return;
                 }
 
-                this.m_startedObject.e_onObjectSelected = Bridge.fn.remove(this.m_startedObject.e_onObjectSelected, Bridge.fn.cacheBind(this, this.OnObjectSelectedToMerge));
+                this.m_state = TutorialHand.TutorialState.Hinting;
+
+                this.PlayDragAnimation(this.m_hintStartPosition, this.m_hintTargetPosition, this.m_hintsShown > 1);
+
+                this.m_hintsShown = (this.m_hintsShown + 1) | 0;
             },
-            /*TutorialHand.OnObjectSelectedToMerge end.*/
+            /*TutorialHand.ShowNextStep end.*/
 
-            /*TutorialHand.OnObjectMoved start.*/
-            OnObjectMoved: function (a_dragObject) {
-if ( TRACE ) { TRACE( "TutorialHand#OnObjectMoved", this ); }
+            /*TutorialHand.GetNextHintDelay start.*/
+            GetNextHintDelay: function () {
+if ( TRACE ) { TRACE( "TutorialHand#GetNextHintDelay", this ); }
 
-                var $t;
-                $t = Bridge.getEnumerator(this.m_objectManager.spawnedObjects);
-                try {
-                    while ($t.moveNext()) {
-                        var dragObject = $t.Current;
-                        if (a_dragObject.IsNeighborWith(dragObject) && pc.Vec3.equals( this.m_endAnimationPosition, a_dragObject.currentCell.transform.position )) {
-                            this.StopTutorialHandAnimation();
-                            this.m_startedObject.e_onObjectMoved = Bridge.fn.remove(this.m_startedObject.e_onObjectMoved, Bridge.fn.cacheBind(this, this.OnObjectMoved));
+                if (this.m_hintsShown === 0) {
+                    return this.m_firstHintDelay;
+                }
 
-                            return;
+                if (this.m_hintsShown === 1) {
+                    return this.m_playerInactivityForTutorial;
+                }
+
+                return this.m_escalatedInactivity;
+            },
+            /*TutorialHand.GetNextHintDelay end.*/
+
+            /*TutorialHand.TryFindHint start.*/
+            TryFindHint: function () {
+if ( TRACE ) { TRACE( "TutorialHand#TryFindHint", this ); }
+
+                this.m_hintSource = null;
+
+                var objects = this.m_objectManager.spawnedObjects;
+
+                var mergeSource = null;
+                var mergeTarget = pc.Vec3.ZERO.clone();
+                var mergeDistance = 3.40282347E+38;
+
+                var gatherSource = null;
+                var gatherTarget = pc.Vec3.ZERO.clone();
+                var gatherDistance = 3.40282347E+38;
+
+                for (var i = 0; i < objects.Count; i = (i + 1) | 0) {
+                    var source = objects.getItem(i);
+
+                    if (!this.IsUsableObject(source) || !source.isAllowedToDrag) {
+                        continue;
+                    }
+
+                    this.CollectMergeables(source, objects);
+
+                    if (((this.m_mergeables.Count + 1) | 0) < source.mergeThreshold) {
+                        continue;
+                    }
+
+                    var sourcePosition = source.currentCell.transform.position.$clone();
+
+                    if (source.mergeThreshold <= 2 && source.isMergeOnPlace) {
+                        var partner = this.GetNearest(source, this.m_mergeables);
+
+                        if (UnityEngine.MonoBehaviour.op_Equality(partner, null)) {
+                            continue;
+                        }
+
+                        var partnerPosition = partner.currentCell.transform.position.$clone();
+                        var partnerDistance = (sourcePosition.$clone().sub( partnerPosition )).lengthSq();
+
+                        if (partnerDistance < mergeDistance) {
+                            mergeDistance = partnerDistance;
+                            mergeSource = source;
+                            mergeTarget = partnerPosition.$clone();
+                        }
+
+                        continue;
+                    }
+
+                    for (var j = 0; j < this.m_mergeables.Count; j = (j + 1) | 0) {
+                        this.BuildCluster(this.m_mergeables.getItem(j));
+
+                        if (((this.m_cluster.Count + 1) | 0) >= source.mergeThreshold) {
+                            var dropTarget = this.GetNearest(source, this.m_cluster);
+
+                            if (UnityEngine.MonoBehaviour.op_Equality(dropTarget, null)) {
+                                continue;
+                            }
+
+                            var dropPosition = dropTarget.currentCell.transform.position.$clone();
+                            var dropDistance = (sourcePosition.$clone().sub( dropPosition )).lengthSq();
+
+                            if (dropDistance < mergeDistance) {
+                                mergeDistance = dropDistance;
+                                mergeSource = source;
+                                mergeTarget = dropPosition.$clone();
+                            }
+
+                            continue;
+                        }
+
+                        if (this.IsNeighborOfCluster(source, this.m_cluster)) {
+                            continue;
+                        }
+
+                        var freeCell = this.FindFreeNeighborCell(this.m_cluster, source);
+
+                        if (UnityEngine.MonoBehaviour.op_Equality(freeCell, null)) {
+                            continue;
+                        }
+
+                        var gatherPosition = freeCell.transform.position.$clone();
+                        var gatherCandidateDistance = (sourcePosition.$clone().sub( gatherPosition )).lengthSq();
+
+                        if (gatherCandidateDistance < gatherDistance) {
+                            gatherDistance = gatherCandidateDistance;
+                            gatherSource = source;
+                            gatherTarget = gatherPosition.$clone();
                         }
                     }
-                } finally {
-                    if (Bridge.is($t, System.IDisposable)) {
-                        $t.System$IDisposable$Dispose();
+                }
+
+                if (UnityEngine.MonoBehaviour.op_Inequality(mergeSource, null)) {
+                    this.m_hintSource = mergeSource;
+                    this.m_hintTargetPosition = mergeTarget.$clone();
+                } else if (UnityEngine.MonoBehaviour.op_Inequality(gatherSource, null)) {
+                    this.m_hintSource = gatherSource;
+                    this.m_hintTargetPosition = gatherTarget.$clone();
+                } else {
+                    return false;
+                }
+
+                this.m_hintStartPosition = this.m_hintSource.currentCell.transform.position.$clone();
+
+                return true;
+            },
+            /*TutorialHand.TryFindHint end.*/
+
+            /*TutorialHand.CollectMergeables start.*/
+            CollectMergeables: function (a_source, a_objects) {
+if ( TRACE ) { TRACE( "TutorialHand#CollectMergeables", this ); }
+
+                this.m_mergeables.clear();
+
+                for (var i = 0; i < a_objects.Count; i = (i + 1) | 0) {
+                    var candidate = a_objects.getItem(i);
+
+                    if (TutorialHand.IsSameObject(candidate, a_source) || !this.IsUsableObject(candidate)) {
+                        continue;
+                    }
+
+                    if (a_source.CanMergeWith(candidate)) {
+                        this.m_mergeables.add(candidate);
                     }
                 }
             },
-            /*TutorialHand.OnObjectMoved end.*/
+            /*TutorialHand.CollectMergeables end.*/
 
-            /*TutorialHand.StartTutorialTapHandAnimation start.*/
-            StartTutorialTapHandAnimation: function () {
-if ( TRACE ) { TRACE( "TutorialHand#StartTutorialTapHandAnimation", this ); }
+            /*TutorialHand.BuildCluster start.*/
+            BuildCluster: function (a_seed) {
+if ( TRACE ) { TRACE( "TutorialHand#BuildCluster", this ); }
 
-                if (this.m_handSequence != null) {
-                    DG.Tweening.TweenExtensions.Kill(this.m_handSequence);
+                this.m_cluster.clear();
+                this.m_cluster.add(a_seed);
+
+                for (var head = 0; head < this.m_cluster.Count; head = (head + 1) | 0) {
+                    var current = this.m_cluster.getItem(head);
+
+                    for (var i = 0; i < this.m_mergeables.Count; i = (i + 1) | 0) {
+                        var candidate = this.m_mergeables.getItem(i);
+
+                        if (TutorialHand.Contains(this.m_cluster, candidate)) {
+                            continue;
+                        }
+
+                        if (current.IsNeighborWith(candidate)) {
+                            this.m_cluster.add(candidate);
+                        }
+                    }
+                }
+            },
+            /*TutorialHand.BuildCluster end.*/
+
+            /*TutorialHand.IsNeighborOfCluster start.*/
+            IsNeighborOfCluster: function (a_source, a_cluster) {
+if ( TRACE ) { TRACE( "TutorialHand#IsNeighborOfCluster", this ); }
+
+                for (var i = 0; i < a_cluster.Count; i = (i + 1) | 0) {
+                    if (a_source.IsNeighborWith(a_cluster.getItem(i))) {
+                        return true;
+                    }
                 }
 
-                // Сбрасываем состояние
+                return false;
+            },
+            /*TutorialHand.IsNeighborOfCluster end.*/
+
+            /*TutorialHand.FindFreeNeighborCell start.*/
+            FindFreeNeighborCell: function (a_cluster, a_source) {
+if ( TRACE ) { TRACE( "TutorialHand#FindFreeNeighborCell", this ); }
+
+                var foggedFallback = null;
+
+                for (var i = 0; i < a_cluster.Count; i = (i + 1) | 0) {
+                    var cell = a_cluster.getItem(i).currentCell;
+
+                    if (UnityEngine.MonoBehaviour.op_Equality(cell, null)) {
+                        continue;
+                    }
+
+                    var neighbors = System.Array.init([cell.RightNeighbor, cell.LeftNeighbor, cell.TopNeighbor, cell.BottomNeighbor], GridCell);
+
+                    for (var j = 0; j < neighbors.length; j = (j + 1) | 0) {
+                        var neighbor = neighbors[j];
+
+                        if (UnityEngine.MonoBehaviour.op_Equality(neighbor, null) || neighbor.IsOccupied) {
+                            continue;
+                        }
+
+                        if (UnityEngine.MonoBehaviour.op_Equality(neighbor, a_source.currentCell)) {
+                            continue;
+                        }
+
+                        if (!this.IsOnScreen(neighbor.transform.position)) {
+                            continue;
+                        }
+
+                        if (neighbor.isFogged) {
+                            if (UnityEngine.MonoBehaviour.op_Equality(foggedFallback, null)) {
+                                foggedFallback = neighbor;
+                            }
+
+                            continue;
+                        }
+
+                        return neighbor;
+                    }
+                }
+
+                return foggedFallback;
+            },
+            /*TutorialHand.FindFreeNeighborCell end.*/
+
+            /*TutorialHand.GetNearest start.*/
+            GetNearest: function (a_source, a_candidates) {
+if ( TRACE ) { TRACE( "TutorialHand#GetNearest", this ); }
+
+                var nearest = null;
+                var nearestDistance = 3.40282347E+38;
+
+                var sourcePosition = a_source.currentCell.transform.position.$clone();
+
+                for (var i = 0; i < a_candidates.Count; i = (i + 1) | 0) {
+                    var distance = (sourcePosition.$clone().sub( a_candidates.getItem(i).currentCell.transform.position )).lengthSq();
+
+                    if (distance < nearestDistance) {
+                        nearestDistance = distance;
+                        nearest = a_candidates.getItem(i);
+                    }
+                }
+
+                return nearest;
+            },
+            /*TutorialHand.GetNearest end.*/
+
+            /*TutorialHand.FindEggBasket start.*/
+            FindEggBasket: function () {
+if ( TRACE ) { TRACE( "TutorialHand#FindEggBasket", this ); }
+
+                var objects = this.m_objectManager.spawnedObjects;
+
+                for (var i = 0; i < objects.Count; i = (i + 1) | 0) {
+                    var candidate = objects.getItem(i);
+
+                    if (UnityEngine.MonoBehaviour.op_Equality(candidate, null) || !candidate.gameObject.activeSelf) {
+                        continue;
+                    }
+
+                    if (UnityEngine.MonoBehaviour.op_Inequality(candidate.eggBasket, null) && this.IsOnScreen(candidate.transform.position)) {
+                        return candidate;
+                    }
+                }
+
+                return null;
+            },
+            /*TutorialHand.FindEggBasket end.*/
+
+            /*TutorialHand.IsUsableObject start.*/
+            IsUsableObject: function (a_object) {
+if ( TRACE ) { TRACE( "TutorialHand#IsUsableObject", this ); }
+
+                return UnityEngine.MonoBehaviour.op_Inequality(a_object, null) && a_object.gameObject.activeSelf && a_object.canBeMerged && UnityEngine.MonoBehaviour.op_Inequality(a_object.currentCell, null) && UnityEngine.MonoBehaviour.op_Equality(a_object.eggBasket, null) && this.IsOnScreen(a_object.currentCell.transform.position);
+            },
+            /*TutorialHand.IsUsableObject end.*/
+
+            /*TutorialHand.IsOnScreen start.*/
+            IsOnScreen: function (a_worldPosition) {
+if ( TRACE ) { TRACE( "TutorialHand#IsOnScreen", this ); }
+
+                var camera = UnityEngine.Camera.main;
+
+                if (UnityEngine.Component.op_Equality(camera, null)) {
+                    return true;
+                }
+
+                var viewportPoint = camera.WorldToViewportPoint(a_worldPosition);
+
+                return viewportPoint.z > 0.0 && viewportPoint.x >= this.m_screenMargin && viewportPoint.x <= 1.0 - this.m_screenMargin && viewportPoint.y >= this.m_screenMargin && viewportPoint.y <= 1.0 - this.m_screenMargin;
+            },
+            /*TutorialHand.IsOnScreen end.*/
+
+            /*TutorialHand.PlayTapAnimation start.*/
+            PlayTapAnimation: function (a_position) {
+if ( TRACE ) { TRACE( "TutorialHand#PlayTapAnimation", this ); }
+
+                this.KillSequence();
+
+                this.transform.position = a_position.$clone();
                 this.transform.localScale = new pc.Vec3( 1, 1, 1 );
-                this.m_spriteRenderer.color = this.m_startedColor.$clone();
+                this.gameObject.SetActive(true);
+                this.SetHandAlpha(0.0);
 
                 this.m_handSequence = DG.Tweening.DOTween.Sequence();
-                DG.Tweening.TweenExtensions.Play(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.SetLoops$1(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.AppendInterval(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.AppendInterval(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.AppendInterval(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(this.m_handSequence, DG.Tweening.DOTweenModuleSprite.DOFade(this.m_spriteRenderer, 1.0, 0.5)), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOScale(this.transform, 0.9, 0.15), DG.Tweening.Ease.InOutSine)), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOScale(this.transform, 1.0, 0.15), DG.Tweening.Ease.InOutSine)), 0.1), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOScale(this.transform, 0.9, 0.15), DG.Tweening.Ease.InOutSine)), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOScale(this.transform, 1.0, 0.15), DG.Tweening.Ease.InOutSine)), 0.7), DG.Tweening.DOTweenModuleSprite.DOFade(this.m_spriteRenderer, 0.0, 0.5)), 0.3), -1, DG.Tweening.LoopType.Restart));
+                DG.Tweening.TweenExtensions.Play(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.SetLoops$1(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.AppendInterval(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.AppendInterval(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.AppendInterval(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(this.m_handSequence, DG.Tweening.DOTweenModuleSprite.DOFade(this.m_spriteRenderer, 1.0, 0.4)), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOScale(this.transform, 0.9, 0.15), DG.Tweening.Ease.InOutSine)), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOScale(this.transform, 1.0, 0.15), DG.Tweening.Ease.InOutSine)), 0.1), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOScale(this.transform, 0.9, 0.15), DG.Tweening.Ease.InOutSine)), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOScale(this.transform, 1.0, 0.15), DG.Tweening.Ease.InOutSine)), 0.7), DG.Tweening.DOTweenModuleSprite.DOFade(this.m_spriteRenderer, 0.0, 0.4)), 0.3), -1, DG.Tweening.LoopType.Restart));
             },
-            /*TutorialHand.StartTutorialTapHandAnimation end.*/
+            /*TutorialHand.PlayTapAnimation end.*/
 
-            /*TutorialHand.StartTutorialMoveHandAnimation start.*/
-            StartTutorialMoveHandAnimation: function () {
-if ( TRACE ) { TRACE( "TutorialHand#StartTutorialMoveHandAnimation", this ); }
+            /*TutorialHand.PlayDragAnimation start.*/
+            PlayDragAnimation: function (a_from, a_to, a_escalated) {
+if ( TRACE ) { TRACE( "TutorialHand#PlayDragAnimation", this ); }
+
+                this.KillSequence();
+
+                this.transform.position = a_from.$clone();
+                this.transform.localScale = new pc.Vec3( 1, 1, 1 );
+                this.gameObject.SetActive(true);
+                this.SetHandAlpha(0.0);
+
+                var moveDuration = a_escalated ? this.m_dragDuration * 0.7 : this.m_dragDuration;
+                var tailInterval = a_escalated ? 0.15 : 0.4;
+
+                this.m_handSequence = DG.Tweening.DOTween.Sequence();
+                DG.Tweening.TweenExtensions.Play(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.SetLoops$1(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.AppendInterval(DG.Tweening.TweenSettingsExtensions.AppendCallback(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.AppendInterval(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(this.m_handSequence, DG.Tweening.DOTweenModuleSprite.DOFade(this.m_spriteRenderer, 1.0, 0.35)), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOScale(this.transform, 0.85, 0.15), DG.Tweening.Ease.OutSine)), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOMove(this.transform, a_to.$clone(), moveDuration), DG.Tweening.Ease.InOutSine)), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOScale(this.transform, 1.0, 0.15), DG.Tweening.Ease.OutBack)), 0.2), DG.Tweening.DOTweenModuleSprite.DOFade(this.m_spriteRenderer, 0.0, 0.3)), Bridge.fn.bind(this, function () {
+                    this.transform.position = a_from.$clone();
+                })), tailInterval), -1, DG.Tweening.LoopType.Restart));
+            },
+            /*TutorialHand.PlayDragAnimation end.*/
+
+            /*TutorialHand.PlayHoldAnimation start.*/
+            PlayHoldAnimation: function (a_position) {
+if ( TRACE ) { TRACE( "TutorialHand#PlayHoldAnimation", this ); }
+
+                this.KillSequence();
+
+                this.transform.position = a_position.$clone();
+                this.transform.localScale = new pc.Vec3( 1, 1, 1 );
+                this.gameObject.SetActive(true);
+
+                this.m_handSequence = DG.Tweening.DOTween.Sequence();
+                DG.Tweening.TweenExtensions.Play(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.SetLoops$1(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(this.m_handSequence, DG.Tweening.DOTweenModuleSprite.DOFade(this.m_spriteRenderer, 1.0, 0.2)), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOScale(this.transform, 0.85, 0.4), DG.Tweening.Ease.InOutSine)), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOScale(this.transform, 1.0, 0.4), DG.Tweening.Ease.InOutSine)), -1, DG.Tweening.LoopType.Restart));
+            },
+            /*TutorialHand.PlayHoldAnimation end.*/
+
+            /*TutorialHand.HideHand start.*/
+            HideHand: function () {
+if ( TRACE ) { TRACE( "TutorialHand#HideHand", this ); }
+
+                this.KillSequence();
+
+                if (UnityEngine.Component.op_Inequality(this.m_spriteRenderer, null)) {
+                    DG.Tweening.DOTweenModuleSprite.DOFade(this.m_spriteRenderer, 0.0, 0.2);
+                }
+            },
+            /*TutorialHand.HideHand end.*/
+
+            /*TutorialHand.SetHandAlpha start.*/
+            SetHandAlpha: function (a_alpha) {
+if ( TRACE ) { TRACE( "TutorialHand#SetHandAlpha", this ); }
+
+                if (UnityEngine.Component.op_Equality(this.m_spriteRenderer, null)) {
+                    return;
+                }
+
+                var color = new pc.Color( 1, 1, 1, 1 );
+                color.a = a_alpha;
+
+                this.m_spriteRenderer.color = color.$clone();
+            },
+            /*TutorialHand.SetHandAlpha end.*/
+
+            /*TutorialHand.KillSequence start.*/
+            KillSequence: function () {
+if ( TRACE ) { TRACE( "TutorialHand#KillSequence", this ); }
 
                 if (this.m_handSequence != null) {
                     DG.Tweening.TweenExtensions.Kill(this.m_handSequence);
+                    this.m_handSequence = null;
                 }
 
-                this.m_spriteRenderer.color = this.m_alphaColor.$clone();
-                this.transform.position = this.m_startAnimationPosition.$clone();
+                DG.Tweening.ShortcutExtensions.DOKill(this.transform);
 
-                // Создаём последовательность
-                this.m_handSequence = DG.Tweening.DOTween.Sequence();
-                DG.Tweening.TweenExtensions.Play(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.SetLoops$1(DG.Tweening.Sequence, DG.Tweening.TweenSettingsExtensions.AppendCallback(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(DG.Tweening.TweenSettingsExtensions.Append(this.m_handSequence, DG.Tweening.DOTweenModuleSprite.DOFade(this.m_spriteRenderer, 1.0, 0.5)), DG.Tweening.TweenSettingsExtensions.SetEase$2(DG.Tweening.Core.TweenerCore$3(UnityEngine.Vector3,UnityEngine.Vector3,DG.Tweening.Plugins.Options.VectorOptions), DG.Tweening.ShortcutExtensions.DOMove(this.transform, this.m_endAnimationPosition.$clone(), 1.0), DG.Tweening.Ease.InOutSine)), DG.Tweening.DOTweenModuleSprite.DOFade(this.m_spriteRenderer, 0.0, 0.5)), Bridge.fn.bind(this, function () {
-                    this.transform.position = this.m_startAnimationPosition.$clone(); // Вернуться в начало
-                })), -1, DG.Tweening.LoopType.Restart));
+                if (UnityEngine.Component.op_Inequality(this.m_spriteRenderer, null)) {
+                    DG.Tweening.ShortcutExtensions.DOKill(this.m_spriteRenderer);
+                }
             },
-            /*TutorialHand.StartTutorialMoveHandAnimation end.*/
+            /*TutorialHand.KillSequence end.*/
+
+            /*TutorialHand.StopWaiting start.*/
+            StopWaiting: function () {
+if ( TRACE ) { TRACE( "TutorialHand#StopWaiting", this ); }
+
+                if (this.m_waitRoutine != null) {
+                    this.StopCoroutine$2(this.m_waitRoutine);
+                    this.m_waitRoutine = null;
+                }
+            },
+            /*TutorialHand.StopWaiting end.*/
 
 
-        },
-        overloads: {
-            "StopCoroutine()": "StopCoroutine$3"
         }
     });
     /*TutorialHand end.*/
+
+    /*TutorialHand+TutorialState start.*/
+    Bridge.define("TutorialHand.TutorialState", {
+        $kind: 1006,
+        statics: {
+            fields: {
+                Inactive: 0,
+                PointingBasket: 1,
+                Waiting: 2,
+                Hinting: 3,
+                Holding: 4
+            }
+        }
+    });
+    /*TutorialHand+TutorialState end.*/
 
     /*TutorialHandPointer start.*/
     Bridge.define("TutorialHandPointer", {
@@ -9662,7 +9747,7 @@ if ( TRACE ) { TRACE( "UIExtensions#FadeGroup", this ); }
     /*DinoCarousel end.*/
 
     /*DinoSelectionManager start.*/
-    $m("DinoSelectionManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"ApplyChosenSet","t":8,"pi":[{"n":"a_selectedSet","pt":ObjectSet,"ps":0}],"sn":"ApplyChosenSet","rt":$n[0].Void,"p":[ObjectSet]},{"a":2,"n":"ApplyObjectSetToMap","t":8,"pi":[{"n":"a_map","pt":MapObjectLayoutManager,"ps":0},{"n":"a_set","pt":ObjectSet,"ps":1}],"sn":"ApplyObjectSetToMap","rt":$n[0].Void,"p":[MapObjectLayoutManager,ObjectSet]},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"ChooseDino","t":8,"sn":"ChooseDino","rt":$n[0].Void},{"a":1,"n":"HideChoosingScreen","t":8,"sn":"HideChoosingScreen","rt":$n[0].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[0].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"ShowNextDino","t":8,"sn":"ShowNextDino","rt":$n[0].Void},{"a":1,"n":"ShowPreviousDino","t":8,"sn":"ShowPreviousDino","rt":$n[0].Void},{"a":2,"n":"ShowRewardCardFinal","t":8,"sn":"ShowRewardCardFinal","rt":$n[0].Void},{"a":2,"n":"CurrentObjectSet","t":16,"rt":ObjectSet,"g":{"a":2,"n":"get_CurrentObjectSet","t":8,"rt":ObjectSet,"fg":"CurrentObjectSet"},"fn":"CurrentObjectSet"},{"a":2,"n":"Instance","is":true,"t":16,"rt":DinoSelectionManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":DinoSelectionManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[DinoSelectionManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_arrowHandTutorial","t":4,"rt":TutorialHandPointer,"sn":"m_arrowHandTutorial"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_cameraController","t":4,"rt":CameraController,"sn":"m_cameraController"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_carouselGroup","t":4,"rt":$n[1].GameObject,"sn":"m_carouselGroup"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_chooseDinoButton","t":4,"rt":$n[4].Button,"sn":"m_chooseDinoButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_choosingScreenOverlay","t":4,"rt":$n[1].GameObject,"sn":"m_choosingScreenOverlay"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_choosingScreenWorldCanvas","t":4,"rt":$n[1].GameObject,"sn":"m_choosingScreenWorldCanvas"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_chosenDinoPosition","t":4,"rt":$n[1].Transform,"sn":"m_chosenDinoPosition"},{"a":1,"n":"m_currentObjectSet","t":4,"rt":ObjectSet,"sn":"m_currentObjectSet"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_dinoCarousel","t":4,"rt":DinoCarousel,"sn":"m_dinoCarousel"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_dinoObjectSets","t":4,"rt":$n[3].List$1(ObjectSet),"sn":"m_dinoObjectSets"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_heartEffect","t":4,"rt":$n[1].ParticleSystem,"sn":"m_heartEffect"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_logoPlayNowButton","t":4,"rt":$n[1].Transform,"sn":"m_logoPlayNowButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_logoPlayNowNewButtonPosition","t":4,"rt":$n[1].Transform,"sn":"m_logoPlayNowNewButtonPosition"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_mainSystem","t":4,"rt":MainSystem,"sn":"m_mainSystem"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_mapObjectLayoutManager","t":4,"rt":MapObjectLayoutManager,"sn":"m_mapObjectLayoutManager"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_nextDinoButton","t":4,"rt":$n[4].Button,"sn":"m_nextDinoButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_previousDinoButton","t":4,"rt":$n[4].Button,"sn":"m_previousDinoButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_rewardCard","t":4,"rt":$n[1].GameObject,"sn":"m_rewardCard"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_rewardCardImage","t":4,"rt":$n[4].Image,"sn":"m_rewardCardImage"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_tutorialHandChooseButton","t":4,"rt":TutorialHandPointer,"sn":"m_tutorialHandChooseButton"},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":DinoSelectionManager,"sn":"Instance"}]}; }, $n);
+    $m("DinoSelectionManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"ApplyChosenSet","t":8,"pi":[{"n":"a_selectedSet","pt":ObjectSet,"ps":0}],"sn":"ApplyChosenSet","rt":$n[0].Void,"p":[ObjectSet]},{"a":2,"n":"ApplyObjectSetToMap","t":8,"pi":[{"n":"a_map","pt":MapObjectLayoutManager,"ps":0},{"n":"a_set","pt":ObjectSet,"ps":1}],"sn":"ApplyObjectSetToMap","rt":$n[0].Void,"p":[MapObjectLayoutManager,ObjectSet]},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"ChooseDino","t":8,"sn":"ChooseDino","rt":$n[0].Void},{"a":1,"n":"FinishPlayable","t":8,"sn":"FinishPlayable","rt":$n[0].Void},{"a":1,"n":"HideChoosingScreen","t":8,"sn":"HideChoosingScreen","rt":$n[0].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[0].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"SetRewardCardButtonActive","t":8,"pi":[{"n":"a_isActive","pt":$n[0].Boolean,"ps":0}],"sn":"SetRewardCardButtonActive","rt":$n[0].Void,"p":[$n[0].Boolean]},{"a":1,"n":"ShowNextDino","t":8,"sn":"ShowNextDino","rt":$n[0].Void},{"a":1,"n":"ShowPreviousDino","t":8,"sn":"ShowPreviousDino","rt":$n[0].Void},{"a":2,"n":"ShowRewardCardFinal","t":8,"sn":"ShowRewardCardFinal","rt":$n[0].Void},{"a":2,"n":"CurrentObjectSet","t":16,"rt":ObjectSet,"g":{"a":2,"n":"get_CurrentObjectSet","t":8,"rt":ObjectSet,"fg":"CurrentObjectSet"},"fn":"CurrentObjectSet"},{"a":2,"n":"Instance","is":true,"t":16,"rt":DinoSelectionManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":DinoSelectionManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[DinoSelectionManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_arrowHandTutorial","t":4,"rt":TutorialHandPointer,"sn":"m_arrowHandTutorial"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_cameraController","t":4,"rt":CameraController,"sn":"m_cameraController"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_carouselGroup","t":4,"rt":$n[1].GameObject,"sn":"m_carouselGroup"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_chooseDinoButton","t":4,"rt":$n[4].Button,"sn":"m_chooseDinoButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_choosingScreenOverlay","t":4,"rt":$n[1].GameObject,"sn":"m_choosingScreenOverlay"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_choosingScreenWorldCanvas","t":4,"rt":$n[1].GameObject,"sn":"m_choosingScreenWorldCanvas"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_chosenDinoPosition","t":4,"rt":$n[1].Transform,"sn":"m_chosenDinoPosition"},{"a":1,"n":"m_currentObjectSet","t":4,"rt":ObjectSet,"sn":"m_currentObjectSet"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_dinoCarousel","t":4,"rt":DinoCarousel,"sn":"m_dinoCarousel"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_dinoObjectSets","t":4,"rt":$n[3].List$1(ObjectSet),"sn":"m_dinoObjectSets"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_heartEffect","t":4,"rt":$n[1].ParticleSystem,"sn":"m_heartEffect"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_logoPlayNowButton","t":4,"rt":$n[1].Transform,"sn":"m_logoPlayNowButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_logoPlayNowNewButtonPosition","t":4,"rt":$n[1].Transform,"sn":"m_logoPlayNowNewButtonPosition"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_mainSystem","t":4,"rt":MainSystem,"sn":"m_mainSystem"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_mapObjectLayoutManager","t":4,"rt":MapObjectLayoutManager,"sn":"m_mapObjectLayoutManager"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_nextDinoButton","t":4,"rt":$n[4].Button,"sn":"m_nextDinoButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_previousDinoButton","t":4,"rt":$n[4].Button,"sn":"m_previousDinoButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_rewardCard","t":4,"rt":$n[1].GameObject,"sn":"m_rewardCard"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_rewardCardButton","t":4,"rt":$n[4].Button,"sn":"m_rewardCardButton"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_rewardCardImage","t":4,"rt":$n[4].Image,"sn":"m_rewardCardImage"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_tutorialHandChooseButton","t":4,"rt":TutorialHandPointer,"sn":"m_tutorialHandChooseButton"},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":DinoSelectionManager,"sn":"Instance"}]}; }, $n);
     /*DinoSelectionManager end.*/
 
     /*TutorialHandPointer start.*/
@@ -9670,7 +9755,7 @@ if ( TRACE ) { TRACE( "UIExtensions#FadeGroup", this ); }
     /*TutorialHandPointer end.*/
 
     /*DragManager start.*/
-    $m("DragManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"CheckForMerge","t":8,"pi":[{"n":"a_targetCell","pt":GridCell,"ps":0}],"sn":"CheckForMerge","rt":$n[0].Boolean,"p":[GridCell],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"ContainsObject","is":true,"t":8,"pi":[{"n":"a_list","pt":$n[3].List$1(DragObject),"ps":0},{"n":"a_item","pt":DragObject,"ps":1}],"sn":"ContainsObject","rt":$n[0].Boolean,"p":[$n[3].List$1(DragObject),DragObject],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"Distinct","is":true,"t":8,"pi":[{"n":"a_list","pt":$n[3].List$1(DragObject),"ps":0}],"sn":"Distinct","rt":$n[3].List$1(DragObject),"p":[$n[3].List$1(DragObject)]},{"a":1,"n":"EndDrag","t":8,"sn":"EndDrag","rt":$n[0].Void},{"a":1,"n":"FindHoveredCell","t":8,"sn":"FindHoveredCell","rt":GridCell},{"a":1,"n":"FindMergeGroup","t":8,"pi":[{"n":"a_start","pt":DragObject,"ps":0}],"sn":"FindMergeGroup","rt":$n[3].List$1(DragObject),"p":[DragObject]},{"a":1,"n":"FindMergeGroupVirtual","t":8,"pi":[{"n":"a_start","pt":DragObject,"ps":0},{"n":"a_virtualCell","pt":GridCell,"ps":1}],"sn":"FindMergeGroupVirtual","rt":$n[3].List$1(DragObject),"p":[DragObject,GridCell]},{"a":1,"n":"GetMergeSubset","t":8,"pi":[{"n":"a_fullGroup","pt":$n[3].List$1(DragObject),"ps":0},{"n":"a_mergeCell","pt":GridCell,"ps":1},{"n":"a_threshold","pt":$n[0].Int32,"ps":2},{"n":"a_dragged","pt":DragObject,"ps":3}],"sn":"GetMergeSubset","rt":$n[3].List$1(DragObject),"p":[$n[3].List$1(DragObject),GridCell,$n[0].Int32,DragObject]},{"a":1,"n":"HandleDrag","t":8,"sn":"HandleDrag","rt":$n[0].Void},{"a":1,"n":"HandleInput","t":8,"sn":"HandleInput","rt":$n[0].Void},{"a":1,"n":"MergeGroup","t":8,"pi":[{"n":"a_subset","pt":$n[3].List$1(DragObject),"ps":0},{"n":"a_mergeCell","pt":GridCell,"ps":1}],"sn":"MergeGroup","rt":$n[0].Void,"p":[$n[3].List$1(DragObject),GridCell]},{"a":1,"n":"MergeGroupWithDelay","t":8,"pi":[{"n":"a_subset","pt":$n[3].List$1(DragObject),"ps":0},{"n":"a_cell","pt":GridCell,"ps":1},{"n":"a_newType","pt":$n[0].String,"ps":2},{"n":"a_newLevel","pt":$n[0].Int32,"ps":3}],"sn":"MergeGroupWithDelay","rt":$n[2].IEnumerator,"p":[$n[3].List$1(DragObject),GridCell,$n[0].String,$n[0].Int32]},{"a":1,"n":"MoveObjectToCell","t":8,"pi":[{"n":"a_newCell","pt":GridCell,"ps":0}],"sn":"MoveObjectToCell","rt":$n[0].Void,"p":[GridCell]},{"a":1,"n":"ReturnToPreviousCell","t":8,"sn":"ReturnToPreviousCell","rt":$n[0].Void},{"a":1,"n":"SnapToCell","t":8,"pi":[{"n":"cell","pt":GridCell,"ps":0}],"sn":"SnapToCell","rt":$n[0].Void,"p":[GridCell]},{"a":2,"n":"StartDrag","t":8,"pi":[{"n":"a_draggingObject","pt":DragObject,"ps":0},{"n":"a_touchPosition","pt":$n[1].Vector3,"ps":1}],"sn":"StartDrag","rt":$n[0].Void,"p":[DragObject,$n[1].Vector3]},{"a":1,"n":"StartPullingGroup","t":8,"pi":[{"n":"a_group","pt":$n[3].List$1(DragObject),"ps":0}],"sn":"StartPullingGroup","rt":$n[0].Void,"p":[$n[3].List$1(DragObject)]},{"a":1,"n":"StopPullingCurrentGroup","t":8,"sn":"StopPullingCurrentGroup","rt":$n[0].Void},{"a":1,"n":"TrackHoveredCell","t":8,"sn":"TrackHoveredCell","rt":$n[0].Void},{"a":1,"n":"TryMoveToCell","t":8,"pi":[{"n":"a_targetCell","pt":GridCell,"ps":0}],"sn":"TryMoveToCell","rt":$n[0].Boolean,"p":[GridCell],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"TryStartDrag","t":8,"pi":[{"n":"a_touchPosition","pt":$n[1].Vector3,"ps":0}],"sn":"TryStartDrag","rt":$n[0].Void,"p":[$n[1].Vector3]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"UpdatePotentialMergeGroup","t":8,"sn":"UpdatePotentialMergeGroup","rt":$n[0].Void},{"a":2,"n":"Instance","is":true,"t":16,"rt":DragManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":DragManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[DragManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"a":2,"n":"IsDragging","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsDragging","t":8,"rt":$n[0].Boolean,"fg":"IsDragging","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsDragging"},{"a":1,"n":"m_currentDraggedObject","t":4,"rt":DragObject,"sn":"m_currentDraggedObject"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_dinoSelectionManager","t":4,"rt":DinoSelectionManager,"sn":"m_dinoSelectionManager"},{"a":1,"n":"m_dragOffset","t":4,"rt":$n[1].Vector3,"sn":"m_dragOffset"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_flyingObjectsManager","t":4,"rt":FlyingObjectsManager,"sn":"m_flyingObjectsManager"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_fogManager","t":4,"rt":FogManager,"sn":"m_fogManager"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_highlightedZone","t":4,"rt":HighlightedZone,"sn":"m_highlightedZone"},{"a":1,"n":"m_isDragging","t":4,"rt":$n[0].Boolean,"sn":"m_isDragging","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"m_lastHoveredCell","t":4,"rt":GridCell,"sn":"m_lastHoveredCell"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_mergeEffectParticleSystem","t":4,"rt":$n[1].ParticleSystem,"sn":"m_mergeEffectParticleSystem"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_mergeText","t":4,"rt":$n[1].GameObject,"sn":"m_mergeText"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_objectManager","t":4,"rt":ObjectManager,"sn":"m_objectManager"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_pointsManager","t":4,"rt":PointsManager,"sn":"m_pointsManager"},{"a":1,"n":"m_potentialMergeGroup","t":4,"rt":$n[3].List$1(DragObject),"sn":"m_potentialMergeGroup"},{"a":1,"n":"m_previousHoveredCell","t":4,"rt":GridCell,"sn":"m_previousHoveredCell"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_snapDistance","t":4,"rt":$n[0].Single,"sn":"m_snapDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"m_startCell","t":4,"rt":GridCell,"sn":"m_startCell"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_tutorialHand","t":4,"rt":TutorialHand,"sn":"m_tutorialHand"},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":DragManager,"sn":"Instance"}]}; }, $n);
+    $m("DragManager", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"CheckForMerge","t":8,"pi":[{"n":"a_targetCell","pt":GridCell,"ps":0}],"sn":"CheckForMerge","rt":$n[0].Boolean,"p":[GridCell],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"ContainsObject","is":true,"t":8,"pi":[{"n":"a_list","pt":$n[3].List$1(DragObject),"ps":0},{"n":"a_item","pt":DragObject,"ps":1}],"sn":"ContainsObject","rt":$n[0].Boolean,"p":[$n[3].List$1(DragObject),DragObject],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"Distinct","is":true,"t":8,"pi":[{"n":"a_list","pt":$n[3].List$1(DragObject),"ps":0}],"sn":"Distinct","rt":$n[3].List$1(DragObject),"p":[$n[3].List$1(DragObject)]},{"a":1,"n":"EndDrag","t":8,"sn":"EndDrag","rt":$n[0].Void},{"a":1,"n":"FindHoveredCell","t":8,"sn":"FindHoveredCell","rt":GridCell},{"a":1,"n":"FindMergeGroup","t":8,"pi":[{"n":"a_start","pt":DragObject,"ps":0}],"sn":"FindMergeGroup","rt":$n[3].List$1(DragObject),"p":[DragObject]},{"a":1,"n":"FindMergeGroupVirtual","t":8,"pi":[{"n":"a_start","pt":DragObject,"ps":0},{"n":"a_virtualCell","pt":GridCell,"ps":1}],"sn":"FindMergeGroupVirtual","rt":$n[3].List$1(DragObject),"p":[DragObject,GridCell]},{"a":1,"n":"GetMergeSubset","t":8,"pi":[{"n":"a_fullGroup","pt":$n[3].List$1(DragObject),"ps":0},{"n":"a_mergeCell","pt":GridCell,"ps":1},{"n":"a_threshold","pt":$n[0].Int32,"ps":2},{"n":"a_dragged","pt":DragObject,"ps":3}],"sn":"GetMergeSubset","rt":$n[3].List$1(DragObject),"p":[$n[3].List$1(DragObject),GridCell,$n[0].Int32,DragObject]},{"a":1,"n":"HandleDrag","t":8,"sn":"HandleDrag","rt":$n[0].Void},{"a":1,"n":"HandleInput","t":8,"sn":"HandleInput","rt":$n[0].Void},{"a":1,"n":"MergeGroup","t":8,"pi":[{"n":"a_subset","pt":$n[3].List$1(DragObject),"ps":0},{"n":"a_mergeCell","pt":GridCell,"ps":1}],"sn":"MergeGroup","rt":$n[0].Void,"p":[$n[3].List$1(DragObject),GridCell]},{"a":1,"n":"MergeGroupWithDelay","t":8,"pi":[{"n":"a_subset","pt":$n[3].List$1(DragObject),"ps":0},{"n":"a_cell","pt":GridCell,"ps":1},{"n":"a_newType","pt":$n[0].String,"ps":2},{"n":"a_newLevel","pt":$n[0].Int32,"ps":3}],"sn":"MergeGroupWithDelay","rt":$n[2].IEnumerator,"p":[$n[3].List$1(DragObject),GridCell,$n[0].String,$n[0].Int32]},{"a":1,"n":"MoveObjectToCell","t":8,"pi":[{"n":"a_newCell","pt":GridCell,"ps":0}],"sn":"MoveObjectToCell","rt":$n[0].Void,"p":[GridCell]},{"a":1,"n":"ReturnToPreviousCell","t":8,"sn":"ReturnToPreviousCell","rt":$n[0].Void},{"a":1,"n":"SnapToCell","t":8,"pi":[{"n":"cell","pt":GridCell,"ps":0}],"sn":"SnapToCell","rt":$n[0].Void,"p":[GridCell]},{"a":2,"n":"StartDrag","t":8,"pi":[{"n":"a_draggingObject","pt":DragObject,"ps":0},{"n":"a_touchPosition","pt":$n[1].Vector3,"ps":1}],"sn":"StartDrag","rt":$n[0].Void,"p":[DragObject,$n[1].Vector3]},{"a":1,"n":"StartPullingGroup","t":8,"pi":[{"n":"a_group","pt":$n[3].List$1(DragObject),"ps":0}],"sn":"StartPullingGroup","rt":$n[0].Void,"p":[$n[3].List$1(DragObject)]},{"a":1,"n":"StopPullingCurrentGroup","t":8,"sn":"StopPullingCurrentGroup","rt":$n[0].Void},{"a":1,"n":"TrackHoveredCell","t":8,"sn":"TrackHoveredCell","rt":$n[0].Void},{"a":1,"n":"TryMoveToCell","t":8,"pi":[{"n":"a_targetCell","pt":GridCell,"ps":0}],"sn":"TryMoveToCell","rt":$n[0].Boolean,"p":[GridCell],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"TryStartDrag","t":8,"pi":[{"n":"a_touchPosition","pt":$n[1].Vector3,"ps":0}],"sn":"TryStartDrag","rt":$n[0].Void,"p":[$n[1].Vector3]},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"UpdatePotentialMergeGroup","t":8,"sn":"UpdatePotentialMergeGroup","rt":$n[0].Void},{"a":2,"n":"Instance","is":true,"t":16,"rt":DragManager,"g":{"a":2,"n":"get_Instance","t":8,"rt":DragManager,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[DragManager],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"a":2,"n":"IsDragging","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsDragging","t":8,"rt":$n[0].Boolean,"fg":"IsDragging","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsDragging"},{"a":1,"n":"m_currentDraggedObject","t":4,"rt":DragObject,"sn":"m_currentDraggedObject"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_dinoSelectionManager","t":4,"rt":DinoSelectionManager,"sn":"m_dinoSelectionManager"},{"a":1,"n":"m_dragOffset","t":4,"rt":$n[1].Vector3,"sn":"m_dragOffset"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_flyingObjectsManager","t":4,"rt":FlyingObjectsManager,"sn":"m_flyingObjectsManager"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_fogManager","t":4,"rt":FogManager,"sn":"m_fogManager"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_highlightedZone","t":4,"rt":HighlightedZone,"sn":"m_highlightedZone"},{"a":1,"n":"m_isDragging","t":4,"rt":$n[0].Boolean,"sn":"m_isDragging","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"m_lastHoveredCell","t":4,"rt":GridCell,"sn":"m_lastHoveredCell"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_mergeEffectParticleSystem","t":4,"rt":$n[1].ParticleSystem,"sn":"m_mergeEffectParticleSystem"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_mergeText","t":4,"rt":$n[1].GameObject,"sn":"m_mergeText"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_objectManager","t":4,"rt":ObjectManager,"sn":"m_objectManager"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_pointsManager","t":4,"rt":PointsManager,"sn":"m_pointsManager"},{"a":1,"n":"m_potentialMergeGroup","t":4,"rt":$n[3].List$1(DragObject),"sn":"m_potentialMergeGroup"},{"a":1,"n":"m_previousHoveredCell","t":4,"rt":GridCell,"sn":"m_previousHoveredCell"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_snapDistance","t":4,"rt":$n[0].Single,"sn":"m_snapDistance","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"m_startCell","t":4,"rt":GridCell,"sn":"m_startCell"},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":DragManager,"sn":"Instance"}]}; }, $n);
     /*DragManager end.*/
 
     /*DragObject start.*/
@@ -9772,8 +9857,12 @@ if ( TRACE ) { TRACE( "UIExtensions#FadeGroup", this ); }
     /*PointsManager end.*/
 
     /*TutorialHand start.*/
-    $m("TutorialHand", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"ActivateTutorialAfterPlayerInactivity","t":8,"sn":"ActivateTutorialAfterPlayerInactivity","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"OnObjectMoved","t":8,"pi":[{"n":"a_dragObject","pt":DragObject,"ps":0}],"sn":"OnObjectMoved","rt":$n[0].Void,"p":[DragObject]},{"a":1,"n":"OnObjectSelected","t":8,"pi":[{"n":"a_dragObject","pt":DragObject,"ps":0}],"sn":"OnObjectSelected","rt":$n[0].Void,"p":[DragObject]},{"a":1,"n":"OnObjectSelectedToMerge","t":8,"pi":[{"n":"a_dragObject","pt":DragObject,"ps":0}],"sn":"OnObjectSelectedToMerge","rt":$n[0].Void,"p":[DragObject]},{"a":1,"n":"OnPlayerAction","t":8,"sn":"OnPlayerAction","rt":$n[0].Void},{"a":2,"n":"SetStartColor","t":8,"sn":"SetStartColor","rt":$n[0].Void},{"a":2,"n":"ShowMovingTutorialStep","t":8,"pi":[{"n":"a_startedObject","pt":DragObject,"ps":0},{"n":"a_mergableObject","pt":DragObject,"ps":1},{"n":"a_needToMerge","dv":false,"o":true,"pt":$n[0].Boolean,"ps":2}],"sn":"ShowMovingTutorialStep","rt":$n[0].Void,"p":[DragObject,DragObject,$n[0].Boolean]},{"a":2,"n":"ShowTapTutorialStep","t":8,"pi":[{"n":"a_pointPosition","pt":$n[1].Vector3,"ps":0}],"sn":"ShowTapTutorialStep","rt":$n[0].Void,"p":[$n[1].Vector3]},{"a":2,"n":"StartTutoriaMovingAnimation","t":8,"pi":[{"n":"a_startedObject","pt":DragObject,"ps":0},{"n":"a_mergeableObject","pt":DragObject,"ps":1},{"n":"a_needToMerge","pt":$n[0].Boolean,"ps":2}],"sn":"StartTutoriaMovingAnimation","rt":$n[0].Void,"p":[DragObject,DragObject,$n[0].Boolean]},{"a":1,"n":"StartTutorialMoveHandAnimation","t":8,"sn":"StartTutorialMoveHandAnimation","rt":$n[0].Void},{"a":2,"n":"StartTutorialPointAnimation","t":8,"pi":[{"n":"a_pointToShow","pt":$n[1].Vector3,"ps":0}],"sn":"StartTutorialPointAnimation","rt":$n[0].Void,"p":[$n[1].Vector3]},{"a":1,"n":"StartTutorialTapHandAnimation","t":8,"sn":"StartTutorialTapHandAnimation","rt":$n[0].Void},{"a":2,"n":"StopCoroutine","t":8,"sn":"StopCoroutine$3","rt":$n[0].Void},{"a":2,"n":"StopTutorialHandAnimation","t":8,"sn":"StopTutorialHandAnimation","rt":$n[0].Void},{"a":1,"n":"TutorialAfterInactivity","t":8,"pi":[{"n":"a_dragObject","pt":DragObject,"ps":0},{"n":"a_needToMerge","pt":$n[0].Boolean,"ps":1}],"sn":"TutorialAfterInactivity","rt":$n[2].IEnumerator,"p":[DragObject,$n[0].Boolean]},{"a":2,"n":"Instance","is":true,"t":16,"rt":TutorialHand,"g":{"a":2,"n":"get_Instance","t":8,"rt":TutorialHand,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[TutorialHand],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"a":2,"n":"tutorialCoroutine","t":16,"rt":$n[1].Coroutine,"g":{"a":2,"n":"get_tutorialCoroutine","t":8,"rt":$n[1].Coroutine,"fg":"tutorialCoroutine"},"s":{"a":2,"n":"set_tutorialCoroutine","t":8,"p":[$n[1].Coroutine],"rt":$n[0].Void,"fs":"tutorialCoroutine"},"fn":"tutorialCoroutine"},{"a":1,"n":"m_alphaColor","t":4,"rt":$n[1].Color,"sn":"m_alphaColor"},{"a":1,"n":"m_endAnimationPosition","t":4,"rt":$n[1].Vector3,"sn":"m_endAnimationPosition"},{"a":1,"n":"m_endObject","t":4,"rt":DragObject,"sn":"m_endObject"},{"a":1,"n":"m_handSequence","t":4,"rt":$n[5].Sequence,"sn":"m_handSequence"},{"a":1,"n":"m_inactivityTime","t":4,"rt":$n[0].Single,"sn":"m_inactivityTime","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"m_isFirstTutorialStepStarted","t":4,"rt":$n[0].Boolean,"sn":"m_isFirstTutorialStepStarted","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"m_isSecondTutorialStepStarted","t":4,"rt":$n[0].Boolean,"sn":"m_isSecondTutorialStepStarted","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"m_isThirdTutorialStepStarted","t":4,"rt":$n[0].Boolean,"sn":"m_isThirdTutorialStepStarted","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_objectManager","t":4,"rt":ObjectManager,"sn":"m_objectManager"},{"a":1,"n":"m_playerActive","t":4,"rt":$n[0].Boolean,"sn":"m_playerActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_playerInactivityForTutorial","t":4,"rt":$n[0].Single,"sn":"m_playerInactivityForTutorial","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_spriteRenderer","t":4,"rt":$n[1].SpriteRenderer,"sn":"m_spriteRenderer"},{"a":1,"n":"m_startAnimationPosition","t":4,"rt":$n[1].Vector3,"sn":"m_startAnimationPosition"},{"a":1,"n":"m_startedColor","t":4,"rt":$n[1].Color,"sn":"m_startedColor"},{"a":1,"n":"m_startedObject","t":4,"rt":DragObject,"sn":"m_startedObject"},{"a":1,"n":"m_tutorialCoroutine","t":4,"rt":$n[1].Coroutine,"sn":"m_tutorialCoroutine"},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":TutorialHand,"sn":"Instance"}]}; }, $n);
+    $m("TutorialHand", function () { return {"nested":[TutorialHand.TutorialState],"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"BeginTutorial","t":8,"sn":"BeginTutorial","rt":$n[0].Void},{"a":1,"n":"BuildCluster","t":8,"pi":[{"n":"a_seed","pt":DragObject,"ps":0}],"sn":"BuildCluster","rt":$n[0].Void,"p":[DragObject]},{"a":1,"n":"CollectMergeables","t":8,"pi":[{"n":"a_source","pt":DragObject,"ps":0},{"n":"a_objects","pt":$n[3].List$1(DragObject),"ps":1}],"sn":"CollectMergeables","rt":$n[0].Void,"p":[DragObject,$n[3].List$1(DragObject)]},{"a":1,"n":"Contains","is":true,"t":8,"pi":[{"n":"a_list","pt":$n[3].List$1(DragObject),"ps":0},{"n":"a_item","pt":DragObject,"ps":1}],"sn":"Contains","rt":$n[0].Boolean,"p":[$n[3].List$1(DragObject),DragObject],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"FindEggBasket","t":8,"sn":"FindEggBasket","rt":DragObject},{"a":1,"n":"FindFreeNeighborCell","t":8,"pi":[{"n":"a_cluster","pt":$n[3].List$1(DragObject),"ps":0},{"n":"a_source","pt":DragObject,"ps":1}],"sn":"FindFreeNeighborCell","rt":GridCell,"p":[$n[3].List$1(DragObject),DragObject]},{"a":1,"n":"GetNearest","t":8,"pi":[{"n":"a_source","pt":DragObject,"ps":0},{"n":"a_candidates","pt":$n[3].List$1(DragObject),"ps":1}],"sn":"GetNearest","rt":DragObject,"p":[DragObject,$n[3].List$1(DragObject)]},{"a":1,"n":"GetNextHintDelay","t":8,"sn":"GetNextHintDelay","rt":$n[0].Single,"box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"HideHand","t":8,"sn":"HideHand","rt":$n[0].Void},{"a":1,"n":"IsNeighborOfCluster","t":8,"pi":[{"n":"a_source","pt":DragObject,"ps":0},{"n":"a_cluster","pt":$n[3].List$1(DragObject),"ps":1}],"sn":"IsNeighborOfCluster","rt":$n[0].Boolean,"p":[DragObject,$n[3].List$1(DragObject)],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"IsOnScreen","t":8,"pi":[{"n":"a_worldPosition","pt":$n[1].Vector3,"ps":0}],"sn":"IsOnScreen","rt":$n[0].Boolean,"p":[$n[1].Vector3],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"IsSameObject","is":true,"t":8,"pi":[{"n":"a_first","pt":DragObject,"ps":0},{"n":"a_second","pt":DragObject,"ps":1}],"sn":"IsSameObject","rt":$n[0].Boolean,"p":[DragObject,DragObject],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"IsUsableObject","t":8,"pi":[{"n":"a_object","pt":DragObject,"ps":0}],"sn":"IsUsableObject","rt":$n[0].Boolean,"p":[DragObject],"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"KillSequence","t":8,"sn":"KillSequence","rt":$n[0].Void},{"a":2,"n":"NotifyBasketOpened","t":8,"sn":"NotifyBasketOpened","rt":$n[0].Void},{"a":2,"n":"NotifyObjectGrabbed","t":8,"pi":[{"n":"a_grabbedObject","pt":DragObject,"ps":0}],"sn":"NotifyObjectGrabbed","rt":$n[0].Void,"p":[DragObject]},{"a":2,"n":"NotifyPlayerInput","t":8,"sn":"NotifyPlayerInput","rt":$n[0].Void},{"a":1,"n":"OnDestroy","t":8,"sn":"OnDestroy","rt":$n[0].Void},{"a":1,"n":"PlayDragAnimation","t":8,"pi":[{"n":"a_from","pt":$n[1].Vector3,"ps":0},{"n":"a_to","pt":$n[1].Vector3,"ps":1},{"n":"a_escalated","pt":$n[0].Boolean,"ps":2}],"sn":"PlayDragAnimation","rt":$n[0].Void,"p":[$n[1].Vector3,$n[1].Vector3,$n[0].Boolean]},{"a":1,"n":"PlayHoldAnimation","t":8,"pi":[{"n":"a_position","pt":$n[1].Vector3,"ps":0}],"sn":"PlayHoldAnimation","rt":$n[0].Void,"p":[$n[1].Vector3]},{"a":1,"n":"PlayTapAnimation","t":8,"pi":[{"n":"a_position","pt":$n[1].Vector3,"ps":0}],"sn":"PlayTapAnimation","rt":$n[0].Void,"p":[$n[1].Vector3]},{"a":2,"n":"ScheduleHint","t":8,"sn":"ScheduleHint","rt":$n[0].Void},{"a":1,"n":"SetHandAlpha","t":8,"pi":[{"n":"a_alpha","pt":$n[0].Single,"ps":0}],"sn":"SetHandAlpha","rt":$n[0].Void,"p":[$n[0].Single]},{"a":1,"n":"ShowNextStep","t":8,"sn":"ShowNextStep","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"StopTutorialHandAnimation","t":8,"sn":"StopTutorialHandAnimation","rt":$n[0].Void},{"a":1,"n":"StopWaiting","t":8,"sn":"StopWaiting","rt":$n[0].Void},{"a":1,"n":"TryFindHint","t":8,"sn":"TryFindHint","rt":$n[0].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"WaitForInactivity","t":8,"pi":[{"n":"a_delay","pt":$n[0].Single,"ps":0}],"sn":"WaitForInactivity","rt":$n[2].IEnumerator,"p":[$n[0].Single]},{"a":2,"n":"Instance","is":true,"t":16,"rt":TutorialHand,"g":{"a":2,"n":"get_Instance","t":8,"rt":TutorialHand,"fg":"Instance","is":true},"s":{"a":1,"n":"set_Instance","t":8,"p":[TutorialHand],"rt":$n[0].Void,"fs":"Instance","is":true},"fn":"Instance"},{"a":1,"n":"m_cluster","t":4,"rt":$n[3].List$1(DragObject),"sn":"m_cluster","ro":true},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_dragDuration","t":4,"rt":$n[0].Single,"sn":"m_dragDuration","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_escalatedInactivity","t":4,"rt":$n[0].Single,"sn":"m_escalatedInactivity","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_firstHintDelay","t":4,"rt":$n[0].Single,"sn":"m_firstHintDelay","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"m_handSequence","t":4,"rt":$n[5].Sequence,"sn":"m_handSequence"},{"a":1,"n":"m_hintSource","t":4,"rt":DragObject,"sn":"m_hintSource"},{"a":1,"n":"m_hintStartPosition","t":4,"rt":$n[1].Vector3,"sn":"m_hintStartPosition"},{"a":1,"n":"m_hintTargetPosition","t":4,"rt":$n[1].Vector3,"sn":"m_hintTargetPosition"},{"a":1,"n":"m_hintsShown","t":4,"rt":$n[0].Int32,"sn":"m_hintsShown","box":function ($v) { return Bridge.box($v, System.Int32);}},{"a":1,"n":"m_isStarted","t":4,"rt":$n[0].Boolean,"sn":"m_isStarted","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"m_mergeables","t":4,"rt":$n[3].List$1(DragObject),"sn":"m_mergeables","ro":true},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_objectManager","t":4,"rt":ObjectManager,"sn":"m_objectManager"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_playerInactivityForTutorial","t":4,"rt":$n[0].Single,"sn":"m_playerInactivityForTutorial","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_screenMargin","t":4,"rt":$n[0].Single,"sn":"m_screenMargin","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"m_spriteRenderer","t":4,"rt":$n[1].SpriteRenderer,"sn":"m_spriteRenderer"},{"a":1,"n":"m_state","t":4,"rt":TutorialHand.TutorialState,"sn":"m_state","box":function ($v) { return Bridge.box($v, TutorialHand.TutorialState, System.Enum.toStringFn(TutorialHand.TutorialState));}},{"a":1,"n":"m_waitElapsed","t":4,"rt":$n[0].Single,"sn":"m_waitElapsed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":1,"n":"m_waitRoutine","t":4,"rt":$n[1].Coroutine,"sn":"m_waitRoutine"},{"a":1,"backing":true,"n":"<Instance>k__BackingField","is":true,"t":4,"rt":TutorialHand,"sn":"Instance"}]}; }, $n);
     /*TutorialHand end.*/
+
+    /*TutorialHand+TutorialState start.*/
+    $m("TutorialHand.TutorialState", function () { return {"td":TutorialHand,"att":259,"a":1,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Hinting","is":true,"t":4,"rt":TutorialHand.TutorialState,"sn":"Hinting","box":function ($v) { return Bridge.box($v, TutorialHand.TutorialState, System.Enum.toStringFn(TutorialHand.TutorialState));}},{"a":2,"n":"Holding","is":true,"t":4,"rt":TutorialHand.TutorialState,"sn":"Holding","box":function ($v) { return Bridge.box($v, TutorialHand.TutorialState, System.Enum.toStringFn(TutorialHand.TutorialState));}},{"a":2,"n":"Inactive","is":true,"t":4,"rt":TutorialHand.TutorialState,"sn":"Inactive","box":function ($v) { return Bridge.box($v, TutorialHand.TutorialState, System.Enum.toStringFn(TutorialHand.TutorialState));}},{"a":2,"n":"PointingBasket","is":true,"t":4,"rt":TutorialHand.TutorialState,"sn":"PointingBasket","box":function ($v) { return Bridge.box($v, TutorialHand.TutorialState, System.Enum.toStringFn(TutorialHand.TutorialState));}},{"a":2,"n":"Waiting","is":true,"t":4,"rt":TutorialHand.TutorialState,"sn":"Waiting","box":function ($v) { return Bridge.box($v, TutorialHand.TutorialState, System.Enum.toStringFn(TutorialHand.TutorialState));}}]}; }, $n);
+    /*TutorialHand+TutorialState end.*/
 
     /*UIExtensions start.*/
     $m("UIExtensions", function () { return {"att":1048961,"a":2,"s":true,"m":[{"a":2,"n":"FadeGroup","is":true,"t":8,"pi":[{"n":"root","pt":$n[1].GameObject,"ps":0},{"n":"endAlpha","pt":$n[0].Single,"ps":1},{"n":"duration","pt":$n[0].Single,"ps":2}],"sn":"FadeGroup","rt":$n[0].Void,"p":[$n[1].GameObject,$n[0].Single,$n[0].Single]}]}; }, $n);

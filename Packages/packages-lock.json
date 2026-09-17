@@ -119,7 +119,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.playworks.upp": {
-      "version": "file:C:/Projects/Playworks/Dino Merge Playworks 7.2.0/scripts",
+      "version": "file:../../../Playworks/Dino Merge Playworks 7.2.0/scripts",
       "depth": 0,
       "source": "local",
       "dependencies": {}
