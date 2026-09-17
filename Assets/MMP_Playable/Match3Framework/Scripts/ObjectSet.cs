@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectSet : ScriptableObject
 {
     public string Name;
-    public Sprite HappilyEverAfterSceneSprite;
+    public Sprite RewardCardSprite;
     public List<ObjectMapping> Mappings;
 }
 

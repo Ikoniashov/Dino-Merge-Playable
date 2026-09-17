@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4359e053dd0ce844ea31ec7ee6afbbba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5da9d8e4c9ab6da413fcc5ea65576226, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 8992913723006900996}
   - component: {fileID: 6820410500093548138}
   m_Layer: 0
-  m_Name: EntityImage
+  m_Name: EntityImage1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 09334fadc5d80fc45acf798a5fea3271, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5ec6ff8df0a91b4604067b9d0a6b9550, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -220,6 +220,8 @@ MonoBehaviour:
   m_startedColor: {r: 1, g: 1, b: 1, a: 1}
   m_frameImage: {fileID: 6445386716326706434}
   m_mirrorImage: {fileID: 5806890256396168286}
+  m_gameObjectLeftArrow: {fileID: 0}
+  m_gameObjectRightArrow: {fileID: 0}
 --- !u!1 &7796582437885778290
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +288,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b6d6b37fe6408ce46a3d653022b92c57, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 822bbefc15289661732e7ddcfce7a3a3, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -406,7 +408,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b6d6b37fe6408ce46a3d653022b92c57, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 822bbefc15289661732e7ddcfce7a3a3, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -525,7 +527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c71c305139f38a543ad8c714e8082b67, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9c4da407aaa37d6730e2941caffaf74c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

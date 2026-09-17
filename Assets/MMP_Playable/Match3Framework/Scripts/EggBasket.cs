@@ -47,10 +47,10 @@ public class EggBasket : MonoBehaviour
     public string Resolve(string a_genericId)
     {
         // Если ObjectSet ещё не выбран или не назначен
-        if (PairManager.Instance.currentObjectSet == null)
+        if (DinoSelectionManager.Instance.CurrentObjectSet == null)
             return a_genericId;
 
-        var set = PairManager.Instance.currentObjectSet;
+        var set = DinoSelectionManager.Instance.CurrentObjectSet;
 
         var mapping = set.Mappings
             .FirstOrDefault(m => m.GenericId == a_genericId);

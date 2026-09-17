@@ -13,7 +13,7 @@ public class AudioSystem : MonoBehaviour
     [SerializeField] private AudioSource soundFXAudioSource2;
 
     [SerializeField] private AudioClip m_mergeSoundClip;
-    [SerializeField] private AudioClip m_pairMarryClip;
+    [SerializeField] private AudioClip m_chooseClip;
     [SerializeField] private AudioClip m_fogDissolveClip;
     [SerializeField] private AudioClip m_bubbleClip;
     [SerializeField] private AudioClip m_starSoundClip;
@@ -39,9 +39,9 @@ public class AudioSystem : MonoBehaviour
         PlaySound(m_mergeSoundClip);
     }
 
-    public void PlayMarrySound()
+    public void PlayChooseSound()
     {
-        PlaySound(m_pairMarryClip);
+        PlaySound(m_chooseClip);
     }
 
     public void PlayFogDissolveSound()

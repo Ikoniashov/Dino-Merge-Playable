@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PairEntity : MonoBehaviour
+public class DinoCarousel : MonoBehaviour
 {
     #region Fields
 
@@ -46,7 +46,7 @@ public class PairEntity : MonoBehaviour
         return m_currentIndex;
     }
 
-    public void InitializeSecondScenePairing()
+    public void HideSelectionChrome()
     {
         m_frameImage.DOFade(0f, 0.5f).OnComplete(() => m_frameImage.gameObject.SetActive(false));
         m_mirrorImage.DOFade(0f, 0.5f).OnComplete(() => m_mirrorImage.gameObject.SetActive(false));

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PrincessSecond
   m_EditorClassIdentifier: 
   Name: princesssecond
-  HappilyEverAfterSceneSprite: {fileID: 21300000, guid: 3631d76fd42da93409f153a430fc2932, type: 3}
+  RewardCardSprite: {fileID: 21300000, guid: 14e21fd6b9e5f693aeefbae79848a452, type: 3}
   Mappings:
   - GenericId: princess1lvl
     ConcreteType: princess1lvlsecond

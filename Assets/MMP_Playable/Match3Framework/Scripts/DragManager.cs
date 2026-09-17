@@ -17,7 +17,7 @@ public class DragManager : MonoBehaviour
     [SerializeField] private FlyingObjectsManager m_flyingObjectsManager;
     [SerializeField] private FogManager m_fogManager;
     [SerializeField] private GameObject m_mergeText;
-    [SerializeField] private PairManager m_pairManager;
+    [SerializeField] private DinoSelectionManager m_dinoSelectionManager;
 
     private DragObject m_currentDraggedObject;
     private GridCell m_startCell;
@@ -569,7 +569,7 @@ public class DragManager : MonoBehaviour
         {
             yield return new WaitForSeconds(0.5f);
 
-            m_pairManager.HappilyEverAfterFinal();
+            m_dinoSelectionManager.ShowRewardCardFinal();
         }
     }
 
