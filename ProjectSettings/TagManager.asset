@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Ground
   - 
   - 
   - 
@@ -38,39 +38,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background Image
+    uniqueID: 2597883325
+    locked: 0
+  - name: Base Ground
+    uniqueID: 3446528767
+    locked: 0
+  - name: Object Highlight
+    uniqueID: 183153345
+    locked: 0
+  - name: Shadows
+    uniqueID: 3875774837
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  m_RenderingLayers:
-  - Default
-  - Light Layer 1
-  - Light Layer 2
-  - Light Layer 3
-  - Light Layer 4
-  - Light Layer 5
-  - Light Layer 6
-  - Light Layer 7
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - name: Flying Shadows
+    uniqueID: 1720567905
+    locked: 0
+  - name: Flying Objects
+    uniqueID: 4271441937
+    locked: 0
