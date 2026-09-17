@@ -1,11 +1,13 @@
 {
   "dependencies": {
     "com.unity.2d.sprite": "1.0.0",
-    "com.unity.collab-proxy": "2.7.1",
-    "com.unity.feature.development": "1.0.1",
-    "com.unity.ugui": "1.0.0",
-    "com.unity.visualscripting": "1.9.4",
-    "uk.lunalabs.luna": "file:../Other/6.2.1/scripts",
+    "com.unity.collab-proxy": "2.13.6",
+    "com.unity.feature.development": "1.0.2",
+    "com.unity.multiplayer.center": "1.0.0",
+    "com.unity.playworks.upp": "file:../../../Playworks/Dino Merge Playworks 7.2.0/scripts",
+    "com.unity.ugui": "2.0.0",
+    "com.unity.visualscripting": "1.9.12",
+    "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
