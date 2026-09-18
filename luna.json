@@ -1,8 +1,8 @@
 {
     "version": "7.2.0",
     "projectId": "b9ed475f1d863ed4f92b4c9b93b468c6",
-    "applicationID": 35797,
-    "creativeName": "",
+    "applicationID": 34802,
+    "creativeName": "Playable-ad-1_vertical",
     "pgServer": "EU",
     "window": {
         "‐⁘": true
@@ -131,11 +131,9 @@
             ]
         },
         "scenes": [
-            "Assets/MMP_Playable/Match3Framework/MainScene.unity"
-        ],
-        "disabledScenes": [
             "Assets/Scenes/SampleScene.unity"
         ],
+        "disabledScenes": [],
         "startupScene": 0,
         "packages": {
             "default": {
